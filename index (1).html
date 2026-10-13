@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>focus</title>
+<style>
+:root{--bg:#090b12;--panel:#111521;--panel2:#171c2b;--line:#292f45;--text:#f2f3fa;--muted:#929ab2;--purple:#9b83ff;--cyan:#55d8e8;--green:#59d6a1;--red:#ff6f91;--gold:#ffc96b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#27204a 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Tahoma,Arial,sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:225px minmax(0,1fr);min-height:100vh}.sidebar{border-left:1px solid var(--line);padding:24px 16px;background:#0c0f18eF;position:sticky;top:0;height:100vh}.brand{font-size:20px;font-weight:900;letter-spacing:1.5px;direction:ltr;text-align:right}.brand span{color:var(--purple)}.subbrand{font-size:11px;color:var(--muted);margin-top:5px;margin-bottom:34px}.nav-label{color:#707992;font-size:11px;margin:22px 10px 9px}.nav{display:flex;flex-direction:column;gap:6px}.nav button{border:1px solid transparent;background:transparent;color:var(--muted);text-align:right;padding:12px;border-radius:12px;display:flex;gap:12px;align-items:center}.nav button.active,.nav button:hover{background:#1b1a30;border-color:#403567;color:white}.nav .ico{width:22px;text-align:center}.sidebar-bottom{position:absolute;bottom:20px;right:16px;left:16px;border:1px solid var(--line);border-radius:14px;padding:13px;background:var(--panel);font-size:12px;color:var(--muted);line-height:1.8}.main{padding:28px clamp(16px,3vw,38px);max-width:1500px;width:100%;margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:28px}.eyebrow{color:var(--purple);font-size:11px;font-weight:800;letter-spacing:1.7px;direction:ltr;text-align:right}.h1{font-size:clamp(23px,3vw,32px);margin:8px 0 5px;font-weight:850}.muted{color:var(--muted)}.small{font-size:12px}.profile-pill{border:1px solid var(--line);background:var(--panel);padding:9px 12px;border-radius:12px;display:flex;gap:9px;align-items:center}.avatar{height:36px;width:36px;border-radius:11px;background:linear-gradient(135deg,#6d55ce,#2f9aab);display:grid;place-items:center;font-weight:900;color:white}.avatar.pink{background:linear-gradient(135deg,#b95aab,#6a6ed9)}.btn{border:1px solid #574b88;background:#7c64d9;color:white;border-radius:11px;padding:11px 15px;font-weight:750}.btn:hover{filter:brightness(1.12)}.btn.ghost{background:var(--panel);border-color:var(--line);color:var(--text)}.btn.danger{background:#341825;border-color:#6d2a42;color:#ff9bb1}.grid{display:grid;gap:15px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:17px}.card{background:linear-gradient(145deg,#141927,#10131e);border:1px solid var(--line);border-radius:17px;padding:18px;min-width:0}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}.stat-icon{width:35px;height:35px;border-radius:10px;background:#28213e;color:var(--purple);display:grid;place-items:center;font-size:17px}.stat-number{font-size:27px;font-weight:850;margin:13px 0 4px;direction:ltr;text-align:right}.stat-foot{font-size:11px;color:var(--muted)}.good{color:var(--green)}.two{grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.section-head h2{font-size:16px;margin:0}.link-btn{background:none;border:0;color:var(--purple);font-size:12px}.quest{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #242a3a}.quest:last-child{border:0;padding-bottom:0}.check{width:21px;height:21px;border:1px solid #505872;border-radius:7px;background:transparent;color:white;flex-shrink:0}.check.done{background:#286e58;border-color:#3ca981}.quest-info{flex:1;min-width:0}.quest-title{font-weight:700;font-size:13px}.quest-meta{font-size:11px;color:var(--muted);margin-top:5px}.xp{font-size:12px;color:var(--cyan);white-space:nowrap;font-weight:800;direction:ltr}.challenge{background:linear-gradient(120deg,#211b3a,#141b2a);border:1px solid #443768;border-radius:14px;padding:16px;margin-bottom:12px}.challenge h3{margin:8px 0;font-size:15px}.challenge p{font-size:12px;color:#b4bad0;line-height:1.8;margin:0 0 12px}.progress-line{height:6px;border-radius:20px;background:#282e42;overflow:hidden;margin:9px 0}.progress-line span{display:block;height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:20px}.player{display:flex;align-items:center;gap:10px;margin:14px 0}.player-info{flex:1}.player-name{font-weight:750;font-size:13px}.player-level{font-size:11px;color:var(--muted);margin-top:4px}.player-score{font-weight:850;direction:ltr}.rank-row{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid #242a3a}.rank-row:last-child{border:0}.rank-no{width:25px;height:25px;border-radius:8px;background:#24283a;display:grid;place-items:center;color:#b6bed5;font-size:12px}.rank-name{flex:1;font-size:13px;font-weight:700}.rank-points{font-size:12px;color:var(--cyan);direction:ltr}.page{display:none}.page.active{display:block}.page-intro{margin-bottom:22px}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.field{background:#0c101a;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-width:0}.field::placeholder{color:#707992}.field:focus{outline:1px solid var(--purple);border-color:var(--purple)}.task-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.task-card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.task-card.completed{opacity:.65}.tag{font-size:10px;padding:5px 8px;border-radius:7px;background:#29213f;color:#c4b7ff;display:inline-block}.tag.cyan{background:#143039;color:#8ce7ef}.tag.gold{background:#382c19;color:#ffdb8e}.task-card h3{font-size:14px;margin:11px 0 6px}.task-card p{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 13px}.task-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.big-score{font-size:36px;font-weight:900;direction:ltr}.profile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.shop-item{border:1px solid var(--line);border-radius:13px;background:var(--panel);padding:15px}.shop-emoji{font-size:28px;margin-bottom:9px}.toast{position:fixed;bottom:22px;left:22px;background:#1c2432;border:1px solid #39445b;color:white;padding:13px 17px;border-radius:12px;box-shadow:0 12px 40px #0008;z-index:9;display:none;max-width:calc(100vw - 44px)}.modal-backdrop{position:fixed;inset:0;background:#0009;display:none;place-items:center;padding:18px;z-index:10}.modal{width:min(480px,100%);background:#121724;border:1px solid #343b51;border-radius:18px;padding:22px;max-height:85vh;overflow-y:auto}.modal h2{margin-top:0}.modal label{display:block;font-size:12px;color:var(--muted);margin:12px 0 6px}.modal .field{width:100%}.modal-actions{display:flex;gap:8px;margin-top:18px}.modal-actions button{flex:1}.empty{text-align:center;color:var(--muted);padding:35px 10px}.footer-note{margin-top:18px;font-size:11px;color:#707992;line-height:1.8}.mobile-menu{display:none}
+@media(max-width:1000px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.app{display:block}.sidebar{position:fixed;z-index:8;top:0;right:-260px;width:245px;transition:right .2s;box-shadow:0 0 50px #0008}.sidebar.open{right:0}.mobile-menu{display:inline-flex}.main{padding:18px 13px 35px}.topbar{align-items:flex-start}.profile-pill .who{display:none}.h1{font-size:24px}.stats{gap:9px}.card{padding:14px}.stat-number{font-size:23px}.task-grid,.challenge-grid{grid-template-columns:1fr}.profile-grid{grid-template-columns:1fr}.topbar .btn{padding:10px}.sidebar-bottom{position:static;margin-top:25px}.quest{gap:9px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand">FOCUS</div><div class="subbrand">STUDY HARD. RISE HIGHER.</div>
+  <div class="nav-label">WORKSPACE</div>
+  <nav class="nav">
+    <button class="active" data-page="dashboard"><span class="ico">◈</span> الرئيسية</button>
+    <button data-page="tasks"><span class="ico">▣</span> المهام</button>
+    <button data-page="arena"><span class="ico">⚔</span> ساحة التحديات</button>
+    <button data-page="aiquiz"><span class="ico">🤖</span> كويز الذكاء الاصطناعي</button>
+    <button data-page="chat"><span class="ico">💬</span> الشات المشترك</button>
+    <button data-page="leaderboard"><span class="ico">♛</span> المتصدرون</button>
+    <div class="nav-label">PROGRESSION</div>
+    <button data-page="world"><span class="ico">⌂</span> عالمي</button>
+    <button data-page="shop"><span class="ico">✧</span> المتجر</button>
+    <button data-page="profile"><span class="ico">◉</span> ملفي الشخصي</button>
+  </nav>
+  <div class="sidebar-bottom"><b style="color:#eee">SEASON 01</b> <span style="color:#707992;font-size:10px">v15 · FOCUS</span><br>أكاديمية الظل<br><span id="syncDot" style="color:var(--purple)">●</span> <span id="syncText">نسخة متصلة</span></div>
+</aside>
+<main class="main">
+  <header class="topbar">
+    <div style="display:flex;gap:10px;align-items:flex-start">
+      <button class="btn ghost mobile-menu" id="menuBtn">☰</button>
+      <div><div class="eyebrow">YOUR NEXT LEVEL STARTS NOW</div><h1 class="h1" id="pageTitle">focus</h1><div class="muted small" id="pageSub">أنتِ وصديقتك تختارون مهامكم بنفسكم.</div></div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center"><button class="btn ghost" id="switchBtn">التبديل لصديقتك ↔</button><div class="profile-pill"><div class="avatar" id="topAvatar">N</div><div class="who"><b id="topName">نداوي</b><div class="small muted" id="topLevel">Level 1 · Rookie</div></div></div></div>
+  </header>
+
+  <section class="page active" id="page-dashboard">
+    <div class="grid stats">
+      <div class="card"><div class="stat-top">نقاط الخبرة XP <span class="stat-icon">✦</span></div><div class="stat-number" id="myXP">0</div><div class="stat-foot" id="xpFoot">باقي 100 XP للمستوى التالي</div></div>
+      <div class="card"><div class="stat-top">عملات المتجر <span class="stat-icon">◉</span></div><div class="stat-number" id="myCoins">0</div><div class="stat-foot">تقدرين تصرفينها في المتجر</div></div>
+      <div class="card"><div class="stat-top">إنجازاتك <span class="stat-icon">✓</span></div><div class="stat-number" id="myDone">0</div><div class="stat-foot">مهمة مكتملة في حسابك</div></div>
+      <div class="card"><div class="stat-top">نقاط الأسبوع <span class="stat-icon">♛</span></div><div class="stat-number" id="myWeekly">0</div><div class="stat-foot" id="weeklyFoot">منافسة الأسبوع</div></div>
+    </div>
+    <div class="grid two">
+      <div class="card"><div class="section-head"><h2>مهام اليوم / Today's Quests</h2><button class="link-btn" data-goto="tasks">عرض الكل ←</button></div><div id="dashboardTasks"></div><div style="margin-top:14px"><button class="btn" id="addTaskBtn">＋ إضافة مهمة</button></div></div>
+      <div>
+        <div class="card" style="margin-bottom:15px"><div class="section-head"><h2>⚔ التحدي الأسبوعي</h2><span class="tag">ACTIVE</span></div><div class="challenge"><div class="eyebrow">WEEKLY BOSS</div><h3>أسبوع التفوق الجامعي</h3><p>أنجزي 5 مهام دراسية هذا الأسبوع.</p><div class="progress-line"><span id="bossBar" style="width:0%"></span></div><div class="small muted" id="bossProgress">0 / 5 مهام مكتملة</div></div><div class="section-head"><h2>لوحة المنافسة</h2><button class="link-btn" data-goto="leaderboard">التفاصيل ←</button></div><div id="miniLeaderboard"></div></div>
+        <div class="card"><div class="section-head"><h2>آخر الأحداث</h2><span class="tag cyan">LIVE FEED</span></div><div id="activityFeed"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-tasks">
+    <div class="page-intro"><div class="eyebrow">MISSION CONTROL</div><h2>إدارة المهام</h2><div class="muted small">أضيفي بنفسك المادة والدرس أو الأسئلة.</div></div>
+    <div class="toolbar"><input class="field" id="taskSearch" placeholder="ابحثي عن مهمة..." style="flex:1"><select class="field" id="taskFilter"><option value="all">كل المهام</option><option value="active">غير المكتملة</option><option value="done">المكتملة</option></select><button class="btn" id="addTaskBtn2">＋ مهمة جديدة</button></div>
+    <div class="grid task-grid" id="taskGrid"></div>
+  </section>
+
+  <section class="page" id="page-arena">
+    <div class="page-intro"><div class="eyebrow">CHALLENGE ACCEPTED?</div><h2>ساحة التحديات</h2><div class="muted small">مواجهات ودّية وميزات للتقارب بينك وبين صديقتك.</div></div>
+    <div class="grid challenge-grid">
+      <div class="card"><div class="eyebrow">FRIENDSHIP BOX</div><h2>صندوق الترابط الصديق 🎁</h2><p class="muted small" style="line-height:1.9">افتحي الصندوق لاختبار مدى تقاربكم، أو للحصول على تحدي تعاوني!</p><button class="btn" style="margin-top:15px" onclick="openFriendBox()">فتح الصندوق السرّي</button></div>
+      <div class="card"><div class="eyebrow">STUDY SPRINT</div><h2>جلسة تركيز مشتركة</h2><p class="muted small" style="line-height:1.9">ابدئي عداد التركيز.</p><div id="durChips" style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 8px"></div><div class="big-score" id="timerDisplay">25:00</div><div class="toolbar" style="margin-top:12px"><button class="btn" id="timerStart">ابدئي المؤقت</button><button class="btn ghost" id="timerReset">إعادة</button></div></div>
+      <div class="card"><div class="eyebrow">TODAY</div><h2>تقدمك اليوم والستريك</h2><div id="focusCard"></div></div>
+      <div class="card"><div class="eyebrow">WEEKLY BOSS</div><h2>أسبوع التفوق الجامعي</h2><div class="big-score" id="arenaBoss">0/5</div><div class="progress-line"><span id="arenaBossBar" style="width:0%"></span></div></div>
+    </div>
+  </section>
+
+  <!-- صفحة كويز الذكاء الاصطناعي -->
+  <section class="page" id="page-aiquiz">
+    <div class="page-intro"><div class="eyebrow">AI STUDY ASSISTANT</div><h2>كويز الذكاء الاصطناعي</h2><div class="muted small">ارفعي ملف المادة أو الصقي محتوى الدرس (يدعم النصوص الكبيرة) لتوليد الأسئلة فوراً!</div></div>
+    <div class="card">
+      <label>تركيز أو توجيه خاص (اختياري):</label>
+      <input class="field" id="aiFocus" placeholder="مثال: ركزي على القوانين والمقارنات">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+        <div><label>عدد الأسئلة</label><select class="field" id="aiCount"><option value="5">5 أسئلة</option><option value="10" selected>10 أسئلة</option><option value="15">15 سؤالاً</option></select></div>
+        <div><label>نوع الأسئلة</label><select class="field" id="aiType"><option value="اختيار من متعدد">اختيار من متعدد</option><option value="صح وخطأ">صح وخطأ</option></select></div>
+      </div>
+      <label style="margin-top:12px">محتوى الدرس أو الملخص (مساحة واسعة للتلخيص أو لصق المحتوى):</label>
+      <textarea class="field" id="aiText" rows="8" placeholder="اكتبي أو الصقي محتوى المحاضرة أو الملخص هنا..."></textarea>
+      <label style="margin-top:12px">أو ارفعِي ملف نصي (يدعم الملفات الكبيرة):</label>
+      <input class="field" type="file" id="aiFile" accept=".txt,.md,.json,.csv" onchange="handleFile(this)">
+      <button class="btn" style="margin-top:16px;width:100%" onclick="generateQuiz()">✨ أنشئي الكويز بذكاء</button>
+    </div>
+    <div class="card" id="quizContainer" style="margin-top:15px;display:none">
+      <div class="section-head"><h2>اختبار الفهم الذكي</h2></div>
+      <div id="quizContent" style="line-height:1.9;white-space:pre-wrap"></div>
+    </div>
+  </section>
+
+  <!-- صفحة الشات الحي والمباشر -->
+  <section class="page" id="page-chat">
+    <div class="page-intro"><div class="eyebrow">LIVE CHAT</div><h2>محادثة الأكاديمية</h2><div class="muted small">تحدثي مع صديقتك مباشرة وشاركا التحفيز.</div></div>
+    <div class="card" style="display:flex;flex-direction:column;height:65vh">
+      <div id="chatMessages" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)"></div>
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <input class="field" id="chatInput" placeholder="اكتبي رسالة لصديقتك..." style="flex:1" onkeydown="if(event.key==='Enter')sendChatMessage()">
+        <button class="btn" onclick="sendChatMessage()">إرسال ✈</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-leaderboard">
+    <div class="page-intro"><div class="eyebrow">RANK. COMPETE. REPEAT.</div><h2>لوحة المتصدرين</h2></div>
+    <div class="grid two"><div class="card"><div class="section-head"><h2>ترتيب الموسم حسب XP</h2></div><div id="fullLeaderboard"></div></div><div class="card"><div class="section-head"><h2>مقارنة الحسابين</h2></div><div id="comparison"></div><button class="btn ghost" id="resetWeek" style="margin-top:15px">إعادة ضبط نقاط الأسبوع</button></div></div>
+  </section>
+
+  <section class="page" id="page-world">
+    <div class="page-intro"><div class="eyebrow">YOUR SPACE</div><h2>عالمي الافتراضي</h2></div>
+    <div class="card" style="margin-bottom:15px"><div class="eyebrow">ACADEMY ROOM</div><div style="font-size:70px;text-align:center;padding:25px 0;background:linear-gradient(140deg,#17142d,#172a39);border-radius:13px;margin:12px 0">🌙 🪴 📚</div><h2 id="roomTitle" style="text-align:center">غرفة الباحثة</h2><div id="ownedItems" class="toolbar" style="justify-content:center"></div></div>
+    <button class="btn" data-goto="shop">استكشاف المتجر ←</button>
+  </section>
+
+  <section class="page" id="page-shop">
+    <div class="page-intro"><div class="eyebrow">SPEND YOUR COINS</div><h2>المتجر</h2></div>
+    <div class="grid task-grid" id="shopGrid"></div>
+  </section>
+
+  <section class="page" id="page-profile">
+    <div class="page-intro"><div class="eyebrow">PLAYER PROFILE</div><h2>ملفي الشخصي</h2></div>
+    <div class="grid two"><div class="card"><div style="display:flex;gap:15px;align-items:center"><div class="avatar" id="profileAvatar" style="width:60px;height:60px;font-size:24px">N</div><div><h2 id="profileName" style="margin:0 0 6px">نداوي</h2><div class="muted small" id="profileRank">Rookie · Level 1</div></div></div><div class="progress-line" style="margin-top:20px"><span id="profileBar" style="width:0%"></span></div><div class="small muted" id="profileXPText"></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px"><button class="btn ghost" id="editName">تعديل الاسم</button><button class="btn" id="avatarBtn">🖼️ تغيير الأفتار</button></div></div><div class="card"><h2>إحصائياتك</h2><div id="profileStats"></div></div></div>
+  </section>
+</main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"></div></div>
+
+<script>
+// مفتاح الـ API مثبت في الخلفية بالكامل ولن يظهر لك مجدداً
+const GEMINI_API_KEY = "AIzaSyDE3Hk0zbdccWF2_X_8-pYrybHgwZHY4F0";
+
+const STORAGE_KEY='darkAcademyFriendActivation_v5';
+const initial=()=>({active:0,players:[],tasks:[],chat:[],feed:[{text:'بدأ الموسم الأول في الأكاديمية',time:'الآن'}],nextId:7});
+let state;try{state=JSON.parse(localStorage.getItem(STORAGE_KEY))||initial()}catch(e){state=initial()}
+const levels=[['Rookie',0],['Scholar',100],['Strategist',300],['Elite',600],['Mastermind',1000]];
+const items=[{id:'plant',name:'نبتة نيون',emoji:'🪴',cost:25},{id:'books',name:'مكتبة الظل',emoji:'📚',cost:45},{id:'moon',name:'مصباح القمر',emoji:'🌙',cost:60},{id:'cat',name:'قط الأكاديمية',emoji:'🐈‍⬛',cost:90},{id:'crown',name:'تاج النخبة',emoji:'👑',cost:120},{id:'crystal',name:'بلورة بنفسجية',emoji:'🔮',cost:75}];
+const pageInfo={dashboard:['focus','أنتِ وصديقتك تختارون مهامكم بنفسكم.'],tasks:['إدارة المهام','حوّلي أهدافك الدراسية إلى خطوات واضحة.'],arena:['ساحة التحديات','المخاطرة محسوبة، والإنجاز هو الفيصل.'],aiquiz:['كويز الذكاء الاصطناعي','اختبري فهمك واصنعي أسئلتك بذكاء.'],chat:['المحادثة المشتركة','تواصلي لحظة بلحظة مع صديقتك.'],leaderboard:['لوحة المتصدرين','المنافسة تتجدد كل أسبوع.'],world:['عالمي الافتراضي','ابني مساحتك الخاصة بالعملات.'],shop:['المتجر','مكافآت تجميلية تستحق الإنجاز.'],profile:['ملفي الشخصي','إحصائياتك ومستواك.']};
+
+const MAXP=40;
+let ME=null;try{let v=localStorage.getItem('da_me');if(v){ME=/^\d+$/.test(v)?('p'+v):v}}catch(e){}
+let cloudOn=false,applyingRemote=false,forceAll=false,pushTimer=null,mustPick=false,firstSnap=true,lastMineSig='';
+const newId=()=>Date.now()*10+Math.floor(Math.random()*10);
+const clone=o=>JSON.parse(JSON.stringify(o));
+const SAFE_PID=/^[A-Za-z0-9_-]{1,40}$/;
+const orderP=(a,b)=>((a.joined||0)-(b.joined||0))||String(a.pid).localeCompare(String(b.pid));
+
+function normalize(st){
+  if(!st||!Array.isArray(st.players))return st;
+  st.players.forEach((p,i)=>{if(!p.pid)p.pid='p'+i});
+  st.tasks=(st.tasks||[]).map(t=>typeof t.owner==='number'?Object.assign({},t,{owner:'p'+t.owner}):t);
+  st.chat=st.chat||[];
+  st.players=st.players.filter(p=>(p.claimed||p.joined)&&SAFE_PID.test(String(p.pid))).sort(orderP);
+  return st;
+}
+function fixActive(){state.active=Math.max(0,state.players.findIndex(p=>p.pid===ME))}
+function stripFull(st){const c=clone(st);delete c.active;return c}
+function mineSig(st){const p=st.players.find(x=>x.pid===ME);if(ME==null||!p)return '';return JSON.stringify([p,st.tasks.filter(t=>t.owner===ME),st.chat.length])}
+function mergeState(remote,local,me){
+  const out=clone(remote);if(me==null)return out;
+  const mine=local.players.find(p=>p.pid===me);
+  out.players=out.players.filter(p=>p.pid!==me).concat(mine?[clone(mine)]:[]).sort(orderP);
+  out.tasks=local.tasks.filter(t=>t.owner===me).concat((remote.tasks||[]).filter(t=>t.owner!==me)).sort((a,b)=>b.id-a.id);
+  out.chat=remote.chat||[];
+  return out;
+}
+function setSync(ok,msg){const d=document.getElementById('syncDot'),t=document.getElementById('syncText');if(d)d.style.color=ok?'var(--green)':'var(--red)';if(t)t.textContent=msg}
+function save(){
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}catch(e){}
+  if(!cloudOn||applyingRemote||ME==null)return;
+  if(!forceAll&&mineSig(state)===lastMineSig)return;
+  clearTimeout(pushTimer);pushTimer=setTimeout(pushNow,300);
+}
+async function pushNow(){
+  const all=forceAll;forceAll=false;const sig=mineSig(state);
+  try{
+    await window.cloud.transact(remote=>(all||!remote)?stripFull(state):mergeState(normalize(remote),state,ME));
+    lastMineSig=sig;setSync(true,'متصل — البيانات مشتركة');
+  }catch(e){forceAll=all||forceAll;setSync(false,'انقطع الاتصال');setTimeout(()=>save(),4000)}
+}
+function applyRemote(remote){
+  if(!remote){window.cloud.transact(r=>r||stripFull(initial())).catch(()=>{});return}
+  remote=normalize(remote);
+  if(!remote.players||!remote.tasks)return;
+  const dirty=ME!=null&&mineSig(state)!==lastMineSig;
+  const merged=dirty?mergeState(remote,state,ME):clone(remote);
+  applyingRemote=true;
+  try{
+    state=Object.assign({nextId:state.nextId||7},merged,{active:0});
+    fixActive();
+    if(!dirty)lastMineSig=mineSig(state);
+    if(ME!=null&&!state.players.some(p=>p.pid===ME)){ME=null;try{localStorage.removeItem('da_me')}catch(e){}firstSnap=true}
+    render();
+  }finally{applyingRemote=false}
+  if(firstSnap){firstSnap=false;if(ME==null)openIdentity()}
+}
+function initCloud(){
+  if(cloudOn||!window.cloud)return;
+  cloudOn=true;lastMineSig='';
+  document.getElementById('switchBtn').textContent='تغيير الحساب ↔';
+  setSync(true,'متصل — البيانات مشتركة');
+  window.cloud.subscribe(applyRemote,e=>{
+    cloudOn=false;console.error(e);ensureLocalPlayer();
+    document.getElementById('switchBtn').textContent='محلي ↔';
+    setSync(false,'غير متصل');
+  });
+}
+function ensureLocalPlayer(){
+  if(state.players.length)return;
+  ME='local';state.players.push({pid:'local',name:'لاعبة',activated:true,claimed:true,joined:Date.now(),xp:0,coins:0,weekly:0,done:0,streak:0,owned:[],history:[]});
+  fixActive();render();
+}
+function openIdentity(){
+  mustPick=ME==null;
+  const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
+  const list=state.players.filter(p=>SAFE_PID.test(String(p.pid)));
+  modal.innerHTML=`<h2>أهلًا بك في الأكاديمية ✦</h2><p class="muted small" style="line-height:1.9">اكتبي اسمك وانضمي للمنافسة.</p><label>اسمك</label><input class="field" id="idName" maxlength="24" placeholder="اكتبي اسمك"><div class="modal-actions" style="flex-direction:column;align-items:stretch"><button class="btn" onclick="joinNew()">انضمام ✦</button>${mustPick?'':'<button class="btn ghost" onclick="closeModal()">إلغاء</button>'}</div>${list.length?`<p class="muted small" style="margin:16px 0 8px">حساب سابق:</p><div style="display:flex;flex-direction:column;gap:8px;max-height:28vh;overflow:auto">${list.map(p=>`<button class="btn ghost" onclick="enterAs('${p.pid}')">${escapeHtml(p.name)}</button>`).join('')}</div>`:''}`;
+}
+function enterAs(pid){
+  if(!state.players.some(p=>p.pid===pid))return;
+  ME=pid;fixActive();lastMineSig=mineSig(state);
+  try{localStorage.setItem('da_me',pid)}catch(e){}
+  mustPick=false;closeModal();render();toast('أهلًا '+player().name);
+}
+function joinNew(){
+  const n=document.getElementById('idName').value.trim();
+  if(!n){toast('اكتبي اسمك أول');return}
+  const pid='u'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  ME=pid;lastMineSig='';
+  state.players.push({pid,name:n,activated:true,claimed:true,joined:Date.now(),xp:0,coins:0,weekly:0,done:0,streak:0,owned:[],history:[]});
+  state.players.sort(orderP);fixActive();addFeed(`انضمّت ${n} إلى الأكاديمية`);
+  try{localStorage.setItem('da_me',pid)}catch(e){}
+  mustPick=false;closeModal();render();toast('أهلًا '+n);
+}
+const AVATARS=['🦊','🐱','🐰','🐼','🦋','🌸','🌙','⭐','🔮','🐻','🦄','🍓','🎀','🧸','🐧','🦉','🌷','🐈‍⬛'];
+function openAvatar(){
+  const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
+  modal.innerHTML=`<h2>اختاري أفتارك</h2><div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:14px 0">${AVATARS.map(e=>`<button class="btn ghost" style="font-size:22px;padding:8px 0" onclick="setAvatar('${e}')">${e}</button>`).join('')}</div><div class="modal-actions"><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`;
+}
+function setAvatar(e){player().avatar=e;closeModal();render();toast('تم تغيير الأفتار')}
+function ago(ts){const s=Math.max(0,(Date.now()-ts)/1000);if(s<60)return 'الآن';if(s<3600)return 'قبل '+Math.floor(s/60)+' دقيقة';return 'قبل '+Math.floor(s/3600)+' ساعة'}
+const GHOST={name:'',xp:0,coins:0,weekly:0,done:0,streak:0,owned:[],history:[],activated:false};
+function player(i=state.active){return state.players[i]||GHOST}
+const P=()=>player().pid;
+function level(xp){let n=0;for(let i=0;i<levels.length;i++)if(xp>=levels[i][1])n=i;return {name:levels[n][0],next:levels[n+1]?.[1]||null,base:levels[n][1],index:n}}
+function toast(msg){let el=document.getElementById('toast');el.textContent=msg;el.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>el.style.display='none',2800)}
+function addFeed(text){state.feed.unshift({text,time:'الآن',ts:Date.now()});state.feed=state.feed.slice(0,8)}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function switchPlayer(){if(cloudOn){openIdentity();return}toast('يحتاج اتصال')}
+function nav(page){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id==='page-'+page));document.querySelectorAll('.nav button[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page));document.getElementById('pageTitle').textContent=pageInfo[page][0];document.getElementById('pageSub').textContent=pageInfo[page][1];document.getElementById('sidebar').classList.remove('open');render();window.scrollTo({top:0,behavior:'smooth'})}
+
+function render(){
+  save();let p=player(),lv=level(p.xp),done=state.tasks.filter(t=>t.owner===P()&&t.done).length,studies=state.tasks.filter(t=>t.owner===P()&&t.done&&t.subject!=='شخصي').length;
+  document.getElementById('topName').textContent=p.name;
+  let avHtmlStr=p.avatar?p.avatar:((p.name&&p.name[0])||'N');
+  document.getElementById('topAvatar').innerHTML=avHtmlStr;
+  document.getElementById('topLevel').textContent=`Level ${lv.index+1} · ${lv.name}`;
+  document.getElementById('myXP').textContent=p.xp;document.getElementById('myCoins').textContent=p.coins;document.getElementById('myDone').textContent=done;document.getElementById('myWeekly').textContent=p.weekly;
+  
+  let mine=state.tasks.filter(t=>t.owner===P());
+  document.getElementById('dashboardTasks').innerHTML=mine.filter(t=>!t.done).slice(0,4).map(taskRow).join('')||'<div class="empty">كل المهام مكتملة! ✦</div>';
+  let progress=Math.min(100,studies/5*100);
+  document.getElementById('bossBar').style.width=progress+'%';document.getElementById('bossProgress').textContent=`${Math.min(studies,5)} / 5 مهام`;
+  document.getElementById('arenaBoss').textContent=`${Math.min(studies,5)}/5`;document.getElementById('arenaBossBar').style.width=progress+'%';
+  
+  let ordered=state.players.map((x,i)=>({...x,i})).sort((a,b)=>b.weekly-a.weekly);
+  document.getElementById('miniLeaderboard').innerHTML=ordered.slice(0,5).map((x,i)=>rankRow(x,i,'weekly',ordered)).join('')||'<div class="empty">لا أحد انضم بعد</div>';
+  {let byXp=state.players.map((x,i)=>({...x,i})).sort((a,b)=>b.xp-a.xp);document.getElementById('fullLeaderboard').innerHTML=byXp.map((x,i)=>rankRow(x,i,'xp',byXp)).join('')||'<div class="empty">لا أحد</div>'}
+  
+  document.getElementById('activityFeed').innerHTML=state.feed.slice(0,4).map(f=>`<div class="quest"><div class="stat-icon">✦</div><div class="quest-info"><div class="quest-title">${escapeHtml(f.text)}</div><div class="quest-meta">${escapeHtml(ago(f.ts))}</div></div></div>`).join('');
+  document.getElementById('comparison').innerHTML=state.players.map((x,i)=>`<div class="player"><div class="avatar">${x.avatar||x.name[0]}</div><div class="player-info"><div class="player-name">${escapeHtml(x.name)}</div><div class="progress-line"><span style="width:${Math.min(100,x.xp/10)}%"></span></div></div><div><div class="player-score">${x.xp} XP</div></div></div>`).join('');
+  
+  renderTasks();renderShop();renderProfile();renderWorld();renderFocusCard();renderChat();
+}
+
+function taskRow(t){return `<div class="quest"><button class="check ${t.done?'done':''}" onclick="toggleTask(${t.id})">${t.done?'✓':''}</button><div class="quest-info"><div class="quest-title" style="${t.done?'text-decoration:line-through;color:#8991a6':''}">${escapeHtml(t.title)}</div><div class="quest-meta">${escapeHtml(t.subject)} · ${escapeHtml(t.difficulty)}</div></div><div class="xp">+${t.xp} XP</div></div>`}
+function rankRow(x,i,key,arr){const r=1+arr.filter(y=>y[key]>x[key]).length;return `<div class="rank-row"><div class="rank-no">${r}</div><div class="avatar" style="width:31px;height:31px">${x.avatar||x.name[0]}</div><div class="rank-name">${escapeHtml(x.name)} ${x.pid===P()?'<span class="tag">أنتِ</span>':''}</div><div class="rank-points">${x[key]}</div></div>`}
+function renderTasks(){let tasks=state.tasks.filter(t=>t.owner===P());document.getElementById('taskGrid').innerHTML=tasks.map(t=>`<div class="task-card ${t.done?'completed':''}"><div style="display:flex;justify-content:space-between"><span class="tag">${escapeHtml(t.subject)}</span></div><h3>${escapeHtml(t.title)}</h3><div class="task-bottom"><span class="xp">+${t.xp} XP</span><button class="btn ${t.done?'ghost':''}" onclick="toggleTask(${t.id})">${t.done?'إلغاء':'إنجاز ✓'}</button></div></div>`).join('')||'<div class="empty">لا توجد مهام.</div>'}
+function toggleTask(id){let t=state.tasks.find(x=>x.id===id);if(!t)return;let p=player();t.done=!t.done;if(t.done){p.xp+=t.xp;p.coins+=t.coins;p.weekly+=5;p.done++;addFeed(`${p.name} أنجزت: ${t.title}`);toast('مهمة مكتملة! +'+t.xp+' XP')}else{p.xp-=t.xp;p.done--;}render()}
+function createTask(){let title=document.getElementById('mTitle').value.trim();if(!title)return;state.tasks.unshift({id:newId(),title,subject:document.getElementById('mSubject').value,difficulty:'متوسطة',xp:15,coins:5,done:false,owner:P()});closeModal();render();toast('تمت الإضافة')}
+function openModal(t){document.getElementById('modalBackdrop').style.display='grid';document.getElementById('modal').innerHTML=`<h2>＋ مهمة جديدة</h2><label>اسم المهمة</label><input class="field" id="mTitle" placeholder="مثال: مذاكرة الجافا"><label>المادة</label><select class="field" id="mSubject"><option>برمجة</option><option>رياضيات</option><option>فيزياء</option><option>إنجليزي</option></select><div class="modal-actions"><button class="btn" onclick="createTask()">حفظ</button><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`}
+function closeModal(){document.getElementById('modalBackdrop').style.display='none'}
+
+// دعم قراءة الملفات الكبيرة والنصوص بمرونة تامة
+function handleFile(input){
+  const file = input.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e){
+    document.getElementById('aiText').value = e.target.result;
+    toast('تم تحميل محتوى الملف بنجاح! ✨');
+  };
+  reader.onerror = function(){toast('تعذر قراءة الملف');};
+  reader.readAsText(file, 'UTF-8');
+}
+
+function openFriendBox(){
+  const surprises=[
+    "سؤال الصداقة: وش أكثر مادة تحسّينها متعبة هالأسبوع لصديقتك؟ ناقشوها سوا!",
+    "تحدي التعاون: أنجزا معاً مهمتين دراسيتين قبل نهاية اليوم لتربحان 20 عملة إضافية!",
+    "رسالة دعم: أرسلي رسالة صوتية أو نصية سريعة لصديقتك عبر الشات تشجعينها فيها!",
+    "استراحة قهوة: توقفا عن المذاكرة لمدة 10 دقائق وخذوا بريك خفيف ☕"
+  ];
+  const pick=surprises[Math.floor(Math.random()*surprises.length)];
+  const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
+  modal.innerHTML=`<h2>🎁 صندوق الترابط الصديق</h2><p class="muted" style="line-height:2;margin:15px 0">${pick}</p><div class="modal-actions"><button class="btn" onclick="closeModal();nav('chat')">الانتقال للشات ومناقشتها 💬</button><button class="btn ghost" onclick="closeModal()">إغلاق</button></div>`;
+}
+
+function renderChat(){
+  const box=document.getElementById('chatMessages');if(!box)return;
+  const msgs=state.chat||[];
+  box.innerHTML=msgs.map(m=>`<div style="display:flex;flex-direction:column;align-items:${m.pid===P()?'flex-end':'flex-start'}"><div style="font-size:10px;color:var(--muted);margin-bottom:2px">${escapeHtml(m.name)}</div><div style="background:${m.pid===P()?'#2a224a':'#171c2b'};padding:10px 14px;border-radius:12px;max-width:80%;font-size:13px">${escapeHtml(m.text)}</div></div>`).join('')||'<div class="empty">لا توجد رسائل بعد. ابدئي المحادثة!</div>';
+  box.scrollTop=box.scrollHeight;
+}
+function sendChatMessage(){
+  const inp=document.getElementById('chatInput');if(!inp)return;
+  const txt=inp.value.trim();if(!txt)return;
+  state.chat=state.chat||[];
+  state.chat.push({pid:P(),name:player().name,text:txt,ts:Date.now()});
+  inp.value='';render();
+}
+
+// توليد الكويز بالذكاء الاصطناعي مع دعم النصوص الكبيرة بدون طلب مفتاح
+async function generateQuiz(){
+  const text=document.getElementById('aiText').value.trim();
+  const focus=document.getElementById('aiFocus').value.trim();
+  const count=document.getElementById('aiCount').value;
+  const type=document.getElementById('aiType').value;
+
+  if(!text){toast('الرجاء كتابة أو لصق محتوى الدرس أولاً');return}
+  
+  toast('جاري توليد الأسئلة بواسطة الذكاء الاصطناعي...');
+  try {
+    const promptText = `بناءً على النص التالي، قم بتوليد ${count} أسئلة من نوع "${type}" باللغة العربية.${focus ? ' توجيه خاص: ' + focus : ''} ضع كل سؤال بوضوح مع خياراته والإجابة الصحيحة:\n\n${text}`;
+    
+    const res=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({contents:[{parts:[{text:promptText}]}]})
+    });
+    const data=await res.json();
+    if(data.error){
+      toast('خطأ من الخادم: ' + data.error.message);
+      return;
+    }
+    const reply=data.candidates[0].content.parts[0].text;
+    document.getElementById('quizContainer').style.display='block';
+    document.getElementById('quizContent').innerHTML=`<p style="white-space: pre-wrap;">${escapeHtml(reply)}</p>`;
+    toast('تم توليد الكويز بنجاح! ✨');
+  } catch(e){
+    console.error(e);
+    toast('حدث خطأ أثناء الاتصال بالذكاء الاصطناعي');
+  }
+}
+
+// الستريك والمتابعة اليومية
+function dayKey(d=new Date()){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
+function fmtMin(m){m=m||0;return m>=60?Math.floor(m/60)+'س '+(m%60)+'د':m+'د'}
+function renderFocusCard(){
+  const el=document.getElementById('focusCard');if(!el)return;
+  const p=player(),k=dayKey(),yk=dayKey(new Date(Date.now()-864e5)),GOAL=30,TEAM=1200;
+  const dm=p.dayKey===k?(p.dayMin||0):0,st=(p.lastDay===k||p.lastDay===yk)?(p.streak||0):0;
+  const tot=state.players.reduce((a,x)=>a+(x.weekMin||0),0);
+  el.innerHTML=`<div class="big-score">🔥 ${st} <span style="font-size:14px;color:var(--muted)">يوم متتالي</span></div><div class="small muted" style="margin:10px 0 4px">هدف اليوم: ${Math.min(dm,GOAL)} / ${GOAL} دقيقة${dm>=GOAL?' ✓':''}</div><div class="progress-line"><span style="width:${Math.min(100,dm/GOAL*100)}%"></span></div><div class="small muted" style="margin:16px 0 4px">هدفك الجماعي هالأسبوع: ${fmtMin(tot)} / ${TEAM/60} ساعة</div><div class="progress-line"><span style="width:${Math.min(100,tot/TEAM*100)}%"></span></div>`;
+}
+
+// المؤقت وجلسة التركيز
+const FS={dur:25,run:false,paused:false,endAt:0,remainMs:25*60000,iv:null};
+function updateTimer(){
+  const rem=Math.max(0,Math.ceil((FS.run&&!FS.paused?FS.endAt-Date.now():FS.remainMs)/1000));
+  document.getElementById('timerDisplay').textContent=String(Math.floor(rem/60)).padStart(2,'0')+':'+String(rem%60).padStart(2,'0');
+}
+function startSession(){
+  FS.run=true;FS.paused=false;FS.endAt=Date.now()+FS.remainMs;
+  FS.iv=setInterval(()=>{if(updateTimer()<=0){clearInterval(FS.iv);player().xp+=20;render();toast('أكملتِ جلسة التركيز! +20 XP')}},250);
+  document.getElementById('timerStart').textContent='إيقاف مؤقت';
+}
+document.getElementById('timerStart').addEventListener('click',()=>{if(!FS.run)startSession();else{FS.paused=!FS.paused;if(FS.paused){clearInterval(FS.iv);document.getElementById('timerStart').textContent='استئناف'}else{FS.endAt=Date.now()+FS.remainMs;startSession()}}});
+document.getElementById('timerReset').addEventListener('click',()=>{clearInterval(FS.iv);FS.run=false;FS.remainMs=25*60000;updateTimer();document.getElementById('timerStart').textContent='ابدئي المؤقت'});
+
+function renderShop(){let p=player();document.getElementById('shopGrid').innerHTML=items.map(it=>`<div class="shop-item"><div class="shop-emoji">${it.emoji}</div><h3>${it.name}</h3><div class="muted small">${it.cost} عملة</div><button class="btn" onclick="buyItem('${it.id}')">شراء</button></div>`).join('')}
+function buyItem(id){let it=items.find(x=>x.id===id),p=player();if(p.coins<it.cost){toast('عملاتك غير كافية');return}p.coins-=it.cost;p.owned.push(id);render();toast('تم الشراء!')}
+function renderWorld(){let p=player();document.getElementById('ownedItems').innerHTML=p.owned.map(id=>`<span class="tag">${items.find(x=>x.id===id).emoji} عنصر</span>`).join('')||'<span class="muted small">لا توجد عناصر</span>';document.getElementById('roomTitle').textContent='غرفة '+p.name}
+function renderProfile(){let p=player(),lv=level(p.xp);document.getElementById('profileAvatar').innerHTML=p.avatar||p.name[0];document.getElementById('profileName').textContent=p.name;document.getElementById('profileRank').textContent=lv.name;document.getElementById('profileBar').style.width='50%';document.getElementById('profileXPText').textContent=p.xp+' XP'}
+
+document.querySelectorAll('.nav button[data-page]').forEach(b=>b.addEventListener('click',()=>nav(b.dataset.page)));
+document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>nav(b.dataset.goto)));
+document.getElementById('switchBtn').addEventListener('click',switchPlayer);
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('sidebar').classList.toggle('open'));
+document.getElementById('addTaskBtn').addEventListener('click',openModal);
+document.getElementById('addTaskBtn2').addEventListener('click',openModal);
+
+normalize(state);fixActive();render();
+</script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+import { getFirestore, doc, onSnapshot, runTransaction } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-firestore.js";
+const firebaseConfig = { apiKey: "AIzaSyDE3Hk0zbdccWF2_X_8-pYrybHgwZHY4F0", authDomain: "noi-academy-53eb5.firebaseapp.com", projectId: "noi-academy-53eb5", storageBucket: "noi-academy-53eb5.firebasestorage.app", messagingSenderId: "480847528221", appId: "1:480847528221:web:5a2c2b98664cc87e6e61f4" };
+try{
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const ref = doc(db, "rooms", "main");
+  window.cloud = {
+    subscribe(cb, errCb){ return onSnapshot(ref, s => cb(s.exists() ? JSON.parse(s.data().json) : null), e => errCb && errCb(e)); },
+    async transact(fn){
+      await runTransaction(db, async tx => {
+        const s = await tx.get(ref);
+        const out = fn(s.exists() ? JSON.parse(s.data().json) : null);
+        tx.set(ref, { json: JSON.stringify(out), updated: Date.now() });
+      });
+    }
+  };
+  if(window.onCloudReady) window.onCloudReady();
+}catch(e){ console.error(e); }
+</script>
+</body>
+</html>
