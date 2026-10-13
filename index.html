@@ -7,7 +7,8 @@
 <style>
 :root{--bg:#090b12;--panel:#111521;--panel2:#171c2b;--line:#292f45;--text:#f2f3fa;--muted:#929ab2;--purple:#9b83ff;--cyan:#55d8e8;--green:#59d6a1;--red:#ff6f91;--gold:#ffc96b}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#27204a 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Tahoma,Arial,sans-serif;min-height:100vh}
-button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:225px minmax(0,1fr);min-height:100vh}.sidebar{border-left:1px solid var(--line);padding:24px 16px;background:#0c0f18eF;position:sticky;top:0;height:100vh}.brand{font-size:20px;font-weight:900;letter-spacing:1.5px;direction:ltr;text-align:right}.brand span{color:var(--purple)}.subbrand{font-size:11px;color:var(--muted);margin-top:5px;margin-bottom:34px}.nav-label{color:#707992;font-size:11px;margin:22px 10px 9px}.nav{display:flex;flex-direction:column;gap:6px}.nav button{border:1px solid transparent;background:transparent;color:var(--muted);text-align:right;padding:12px;border-radius:12px;display:flex;gap:12px;align-items:center}.nav button.active,.nav button:hover{background:#1b1a30;border-color:#403567;color:white}.nav .ico{width:22px;text-align:center}.sidebar-bottom{position:absolute;bottom:20px;right:16px;left:16px;border:1px solid var(--line);border-radius:14px;padding:13px;background:var(--panel);font-size:12px;color:var(--muted);line-height:1.8}.main{padding:28px clamp(16px,3vw,38px);max-width:1500px;width:100%;margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:28px}.eyebrow{color:var(--purple);font-size:11px;font-weight:800;letter-spacing:1.7px;direction:ltr;text-align:right}.h1{font-size:clamp(23px,3vw,32px);margin:8px 0 5px;font-weight:850}.muted{color:var(--muted)}.small{font-size:12px}.profile-pill{border:1px solid var(--line);background:var(--panel);padding:9px 12px;border-radius:12px;display:flex;gap:9px;align-items:center}.avatar{height:36px;width:36px;border-radius:11px;background:linear-gradient(135deg,#6d55ce,#2f9aab);display:grid;place-items:center;font-weight:900;color:white}.avatar.pink{background:linear-gradient(135deg,#b95aab,#6a6ed9)}.btn{border:1px solid #574b88;background:#7c64d9;color:white;border-radius:11px;padding:11px 15px;font-weight:750}.btn:hover{filter:brightness(1.12)}.btn.ghost{background:var(--panel);border-color:var(--line);color:var(--text)}.btn.danger{background:#341825;border-color:#6d2a42;color:#ff9bb1}.grid{display:grid;gap:15px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:17px}.card{background:linear-gradient(145deg,#141927,#10131e);border:1px solid var(--line);border-radius:17px;padding:18px;min-width:0}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}.stat-icon{width:35px;height:35px;border-radius:10px;background:#28213e;color:var(--purple);display:grid;place-items:center;font-size:17px}.stat-number{font-size:27px;font-weight:850;margin:13px 0 4px;direction:ltr;text-align:right}.stat-foot{font-size:11px;color:var(--muted)}.good{color:var(--green)}.two{grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.section-head h2{font-size:16px;margin:0}.link-btn{background:none;border:0;color:var(--purple);font-size:12px}.quest{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #242a3a}.quest:last-child{border:0;padding-bottom:0}.check{width:21px;height:21px;border:1px solid #505872;border-radius:7px;background:transparent;color:white;flex-shrink:0}.check.done{background:#286e58;border-color:#3ca981}.quest-info{flex:1;min-width:0}.quest-title{font-weight:700;font-size:13px}.quest-meta{font-size:11px;color:var(--muted);margin-top:5px}.xp{font-size:12px;color:var(--cyan);white-space:nowrap;font-weight:800;direction:ltr}.challenge{background:linear-gradient(120deg,#211b3a,#141b2a);border:1px solid #443768;border-radius:14px;padding:16px;margin-bottom:12px}.challenge h3{margin:8px 0;font-size:15px}.challenge p{font-size:12px;color:#b4bad0;line-height:1.8;margin:0 0 12px}.progress-line{height:6px;border-radius:20px;background:#282e42;overflow:hidden;margin:9px 0}.progress-line span{display:block;height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:20px}.player{display:flex;align-items:center;gap:10px;margin:14px 0}.player-info{flex:1}.player-name{font-weight:750;font-size:13px}.player-level{font-size:11px;color:var(--muted);margin-top:4px}.player-score{font-weight:850;direction:ltr}.rank-row{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid #242a3a}.rank-row:last-child{border:0}.rank-no{width:25px;height:25px;border-radius:8px;background:#24283a;display:grid;place-items:center;color:#b6bed5;font-size:12px}.rank-name{flex:1;font-size:13px;font-weight:700}.rank-points{font-size:12px;color:var(--cyan);direction:ltr}.page{display:none}.page.active{display:block}.page-intro{margin-bottom:22px}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.field{background:#0c101a;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-width:0}.field::placeholder{color:#707992}.field:focus{outline:1px solid var(--purple);border-color:var(--purple)}.task-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.task-card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.task-card.completed{opacity:.65}.tag{font-size:10px;padding:5px 8px;border-radius:7px;background:#29213f;color:#c4b7ff;display:inline-block}.tag.cyan{background:#143039;color:#8ce7ef}.tag.gold{background:#382c19;color:#ffdb8e}.task-card h3{font-size:14px;margin:11px 0 6px}.task-card p{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 13px}.task-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.big-score{font-size:36px;font-weight:900;direction:ltr}.profile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.shop-item{border:1px solid var(--line);border-radius:13px;background:var(--panel);padding:15px}.shop-emoji{font-size:28px;margin-bottom:9px}.toast{position:fixed;bottom:22px;left:22px;background:#1c2432;border:1px solid #39445b;color:white;padding:13px 17px;border-radius:12px;box-shadow:0 12px 40px #0008;z-index:9;display:none;max-width:calc(100vw - 44px)}.modal-backdrop{position:fixed;inset:0;background:#0009;display:none;place-items:center;padding:18px;z-index:10}.modal{width:min(480px,100%);background:#121724;border:1px solid #343b51;border-radius:18px;padding:22px;max-height:85vh;overflow-y:auto}.modal h2{margin-top:0}.modal label{display:block;font-size:12px;color:var(--muted);margin:12px 0 6px}.modal .field{width:100%}.modal-actions{display:flex;gap:8px;margin-top:18px}.modal-actions button{flex:1}.empty{text-align:center;color:var(--muted);padding:35px 10px}.footer-note{margin-top:18px;font-size:11px;color:#707992;line-height:1.8}.mobile-menu{display:none}
+button,input,select{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:225px minmax(0,1fr);min-height:100vh}.sidebar{border-left:1px solid var(--line);padding:24px 16px;background:#0c0f18eF;position:sticky;top:0;height:100vh}.brand{font-size:20px;font-weight:900;letter-spacing:1.5px;direction:ltr;text-align:right}.brand span{color:var(--purple)}.subbrand{font-size:11px;color:var(--muted);margin-top:5px;margin-bottom:34px}.nav-label{color:#707992;font-size:11px;margin:22px 10px 9px}.nav{display:flex;flex-direction:column;gap:6px}.nav button{border:1px solid transparent;background:transparent;color:var(--muted);text-align:right;padding:12px;border-radius:12px;display:flex;gap:12px;align-items:center}.nav button.active,.nav button:hover{background:#1b1a30;border-color:#403567;color:white}.nav .ico{width:22px;text-align:center}.sidebar-bottom{position:absolute;bottom:20px;right:16px;left:16px;border:1px solid var(--line);border-radius:14px;padding:13px;background:var(--panel);font-size:12px;color:var(--muted);line-height:1.8}.main{padding:28px clamp(16px,3vw,38px);max-width:1500px;width:100%;margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:28px}.eyebrow{color:var(--purple);font-size:11px;font-weight:800;letter-spacing:1.7px;direction:ltr;text-align:right}.h1{font-size:clamp(23px,3vw,32px);margin:8px 0 5px;font-weight:850}.muted{color:var(--muted)}.small{font-size:12px}.profile-pill{border:1px solid var(--line);background:var(--panel);padding:9px 12px;border-radius:12px;display:flex;gap:9px;align-items:center}.avatar{height:36px;width:36px;border-radius:11px;background:linear-gradient(135deg,#6d55ce,#2f9aab);display:grid;place-items:center;font-weight:900;color:white}.avatar.pink{background:linear-gradient(135deg,#b95aab,#6a6ed9)}.btn{border:1px solid #574b88;background:#7c64d9;color:white;border-radius:11px;padding:11px 15px;font-weight:750}.btn:hover{filter:brightness(1.12)}.btn.ghost{background:var(--panel);border-color:var(--line);color:var(--text)}.btn.danger{background:#341825;border-color:#6d2a42;color:#ff9bb1}.grid{display:grid;gap:15px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:17px}.card{background:linear-gradient(145deg,#141927,#10131e);border:1px solid var(--line);border-radius:17px;padding:18px;min-width:0}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}.stat-icon{width:35px;height:35px;border-radius:10px;background:#28213e;color:var(--purple);display:grid;place-items:center;font-size:17px}.stat-number{font-size:27px;font-weight:850;margin:13px 0 4px;direction:ltr;text-align:right}.stat-foot{font-size:11px;color:var(--muted)}.good{color:var(--green)}.two{grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.section-head h2{font-size:16px;margin:0}.link-btn{background:none;border:0;color:var(--purple);font-size:12px}.quest{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #242a3a}.quest:last-child{border:0;padding-bottom:0}.check{width:21px;height:21px;border:1px solid #505872;border-radius:7px;background:transparent;color:white;flex-shrink:0}.check.done{background:#286e58;border-color:#3ca981}.quest-info{flex:1;min-width:0}.quest-title{font-weight:700;font-size:13px}.quest-meta{font-size:11px;color:var(--muted);margin-top:5px}.xp{font-size:12px;color:var(--cyan);white-space:nowrap;font-weight:800;direction:ltr}.challenge{background:linear-gradient(120deg,#211b3a,#141b2a);border:1px solid #443768;border-radius:14px;padding:16px;margin-bottom:12px}.challenge h3{margin:8px 0;font-size:15px}.challenge p{font-size:12px;color:#b4bad0;line-height:1.8;margin:0 0 12px}.progress-line{height:6px;border-radius:20px;background:#282e42;overflow:hidden;margin:9px 0}.progress-line span{display:block;height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:20px}.player{display:flex;align-items:center;gap:10px;margin:14px 0}.player-info{flex:1}.player-name{font-weight:750;font-size:13px}.player-level{font-size:11px;color:var(--muted);margin-top:4px}.player-score{font-weight:850;direction:ltr}.rank-row{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid #242a3a}.rank-row:last-child{border:0}.rank-no{width:25px;height:25px;border-radius:8px;background:#24283a;display:grid;place-items:center;color:#b6bed5;font-size:12px}.rank-name{flex:1;font-size:13px;font-weight:700}.rank-points{font-size:12px;color:var(--cyan);direction:ltr}.page{display:none}.page.active{display:block}.page-intro{margin-bottom:22px}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.field{background:#0c101a;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-width:0}.field::placeholder{color:#707992}.field:focus{outline:1px solid var(--purple);border-color:var(--purple)}.task-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.task-card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:15px}.task-card.completed{opacity:.65}.tag{font-size:10px;padding:5px 8px;border-radius:7px;background:#29213f;color:#c4b7ff;display:inline-block}.tag.cyan{background:#143039;color:#8ce7ef}.tag.gold{background:#382c19;color:#ffdb8e}.task-card h3{font-size:14px;margin:11px 0 6px}.task-card p{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 13px}.task-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.big-score{font-size:36px;font-weight:900;direction:ltr}.profile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.shop-item{border:1px solid var(--line);border-radius:13px;background:var(--panel);padding:15px}.shop-emoji{font-size:28px;margin-bottom:9px}.toast{position:fixed;bottom:22px;left:22px;background:#1c2432;border:1px solid #39445b;color:white;padding:13px 17px;border-radius:12px;box-shadow:0 12px 40px #0008;z-index:9;display:none;max-width:calc(100vw - 44px)}.modal-backdrop{position:fixed;inset:0;background:#0009;display:none;place-items:center;padding:18px;z-index:10}.modal{width:min(450px,100%);background:#121724;border:1px solid #343b51;border-radius:18px;padding:22px}.modal h2{margin-top:0}.modal label{display:block;font-size:12px;color:var(--muted);margin:12px 0 6px}.modal .field{width:100%}.modal-actions{display:flex;gap:8px;margin-top:18px}.modal-actions button{flex:1}.empty{text-align:center;color:var(--muted);padding:35px 10px}.footer-note{margin-top:18px;font-size:11px;color:#707992;line-height:1.8}.mobile-menu{display:none}.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px #59d6a1}.chat-log{height:230px;overflow:auto;display:flex;flex-direction:column;gap:9px;padding:10px;background:#0b0e17;border:1px solid var(--line);border-radius:12px}.chat-msg{max-width:88%;padding:9px 11px;border-radius:12px;background:#20263a;align-self:flex-start;overflow-wrap:anywhere}.chat-msg.mine{align-self:flex-end;background:#332b55}.chat-meta{font-size:10px;color:var(--muted);margin-top:5px}.badge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.badge-tile{border:1px solid var(--line);border-radius:12px;background:#0d111c;padding:12px;text-align:center;min-width:0}.badge-tile.locked{opacity:.72;filter:saturate(.4)}.badge-emoji{font-size:25px;margin-bottom:7px}.badge-title{font-size:12px;font-weight:800}.badge-desc{font-size:10px;color:var(--muted);line-height:1.7;margin-top:5px}.room-alert{border:1px solid #574b88;background:linear-gradient(120deg,#211b3a,#121724);border-radius:12px;padding:13px;margin:12px 0}.quiz-drop{display:block;text-align:center;border:1px dashed #6253a1;background:linear-gradient(135deg,#15152a,#0c1320);border-radius:14px;padding:26px 14px;cursor:pointer;transition:.15s}.quiz-drop:hover,.quiz-drop.dragover{border-color:var(--cyan);background:#111b2a}.quiz-q{border:1px solid var(--line);background:#0c101a;border-radius:13px;padding:15px;margin:12px 0}.quiz-q h3{font-size:14px;line-height:1.8;margin:0 0 12px}.quiz-option{display:flex;gap:9px;align-items:flex-start;border:1px solid #2b334a;border-radius:10px;padding:10px;margin:7px 0;cursor:pointer;line-height:1.7;font-size:13px}.quiz-option:has(input:checked){border-color:var(--purple);background:#211b3a}.quiz-option input{margin-top:5px;accent-color:var(--purple)}.quiz-explanation{font-size:12px;line-height:1.8;color:#b9c2d9;margin-top:8px}.quiz-correct{border-color:#27775f!important;background:#10271f!important}.quiz-wrong{border-color:#813d53!important;background:#2b1520!important}
+@media(max-width:700px){.badge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:1000px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.app{display:block}.sidebar{position:fixed;z-index:8;top:0;right:-260px;width:245px;transition:right .2s;box-shadow:0 0 50px #0008}.sidebar.open{right:0}.mobile-menu{display:inline-flex}.main{padding:18px 13px 35px}.topbar{align-items:flex-start}.profile-pill .who{display:none}.h1{font-size:24px}.stats{gap:9px}.card{padding:14px}.stat-number{font-size:23px}.task-grid,.challenge-grid{grid-template-columns:1fr}.profile-grid{grid-template-columns:1fr}.topbar .btn{padding:10px}.sidebar-bottom{position:static;margin-top:25px}.quest{gap:9px}}
 </style>
@@ -15,27 +16,26 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:gri
 <body>
 <div class="app">
 <aside class="sidebar" id="sidebar">
-  <div class="brand">FOCUS</div><div class="subbrand">STUDY HARD. RISE HIGHER.</div>
+  <div class="brand">Focus</div>
   <div class="nav-label">WORKSPACE</div>
   <nav class="nav">
     <button class="active" data-page="dashboard"><span class="ico">◈</span> الرئيسية</button>
     <button data-page="tasks"><span class="ico">▣</span> المهام</button>
+    <button data-page="quiz"><span class="ico">✦</span> كويز الذكاء الاصطناعي</button>
     <button data-page="arena"><span class="ico">⚔</span> ساحة التحديات</button>
-    <button data-page="aiquiz"><span class="ico">🤖</span> كويز الذكاء الاصطناعي</button>
-    <button data-page="chat"><span class="ico">💬</span> الشات المشترك</button>
     <button data-page="leaderboard"><span class="ico">♛</span> المتصدرون</button>
     <div class="nav-label">PROGRESSION</div>
     <button data-page="world"><span class="ico">⌂</span> عالمي</button>
     <button data-page="shop"><span class="ico">✧</span> المتجر</button>
     <button data-page="profile"><span class="ico">◉</span> ملفي الشخصي</button>
   </nav>
-  <div class="sidebar-bottom"><b style="color:#eee">SEASON 01</b> <span style="color:#707992;font-size:10px">v15 · FOCUS</span><br>أكاديمية الظل<br><span id="syncDot" style="color:var(--purple)">●</span> <span id="syncText">نسخة متصلة</span></div>
+  <div class="sidebar-bottom"><b style="color:#eee">SEASON 01</b> <span style="color:#707992;font-size:10px">v10 · FOCUS</span><br>الموسم الأول · Focus<br><span id="syncDot" style="color:var(--purple)">●</span> <span id="syncText">نسخة تجريبية محلية</span></div>
 </aside>
 <main class="main">
   <header class="topbar">
     <div style="display:flex;gap:10px;align-items:flex-start">
       <button class="btn ghost mobile-menu" id="menuBtn">☰</button>
-      <div><div class="eyebrow">YOUR NEXT LEVEL STARTS NOW</div><h1 class="h1" id="pageTitle">فوكس</h1><div class="muted small" id="pageSub">أنتِ وصديقتك تختارون مهامكم بنفسكم.</div></div>
+      <div><div class="eyebrow">YOUR NEXT LEVEL STARTS NOW</div><h1 class="h1" id="pageTitle">Focus</h1><div class="muted small" id="pageSub">أنتِ وصديقتك تختارون مهامكم بنفسكم.</div></div>
     </div>
     <div style="display:flex;gap:8px;align-items:center"><button class="btn ghost" id="switchBtn">التبديل لصديقتك ↔</button><div class="profile-pill"><div class="avatar" id="topAvatar">N</div><div class="who"><b id="topName">نداوي</b><div class="small muted" id="topLevel">Level 1 · Rookie</div></div></div></div>
   </header>
@@ -50,98 +50,95 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:gri
     <div class="grid two">
       <div class="card"><div class="section-head"><h2>مهام اليوم / Today's Quests</h2><button class="link-btn" data-goto="tasks">عرض الكل ←</button></div><div id="dashboardTasks"></div><div style="margin-top:14px"><button class="btn" id="addTaskBtn">＋ إضافة مهمة</button></div></div>
       <div>
-        <div class="card" style="margin-bottom:15px"><div class="section-head"><h2>⚔ التحدي الأسبوعي</h2><span class="tag">ACTIVE</span></div><div class="challenge"><div class="eyebrow">WEEKLY BOSS</div><h3>أسبوع التفوق الجامعي</h3><p>أنجزي 5 مهام دراسية هذا الأسبوع.</p><div class="progress-line"><span id="bossBar" style="width:0%"></span></div><div class="small muted" id="bossProgress">0 / 5 مهام مكتملة</div></div><div class="section-head"><h2>لوحة المنافسة</h2><button class="link-btn" data-goto="leaderboard">التفاصيل ←</button></div><div id="miniLeaderboard"></div></div>
+        <div class="card" style="margin-bottom:15px"><div class="section-head"><h2>⚔ التحدي الأسبوعي</h2><span class="tag">ACTIVE</span></div><div class="challenge"><div class="eyebrow">WEEKLY BOSS</div><h3>أسبوع التفوق الجامعي</h3><p>أنجزي 5 مهام دراسية هذا الأسبوع. اختاروا أنتم المهام اللي تدخل في منافستكم، وأضيفوها من صفحة المهام.</p><div class="progress-line"><span id="bossBar" style="width:0%"></span></div><div class="small muted" id="bossProgress">0 / 5 مهام مكتملة</div></div><div class="section-head"><h2>لوحة المنافسة</h2><button class="link-btn" data-goto="leaderboard">التفاصيل ←</button></div><div id="miniLeaderboard"></div></div>
         <div class="card"><div class="section-head"><h2>آخر الأحداث</h2><span class="tag cyan">LIVE FEED</span></div><div id="activityFeed"></div></div>
       </div>
     </div>
+    <div class="footer-note">المهام والجلسات والدردشة تتزامن عبر Firestore عند الاتصال. إشعارات المتصفح تعتمد على دعم المتصفح وإذنه.</div>
   </section>
 
   <section class="page" id="page-tasks">
-    <div class="page-intro"><div class="eyebrow">MISSION CONTROL</div><h2>إدارة المهام</h2><div class="muted small">أضيفي بنفسك المادة والدرس أو الأسئلة.</div></div>
+    <div class="page-intro"><div class="eyebrow">MISSION CONTROL</div><h2>إدارة المهام</h2><div class="muted small">أضيفي بنفسك المادة والدرس أو الأسئلة اللي تبين تذاكرينها.</div></div>
     <div class="toolbar"><input class="field" id="taskSearch" placeholder="ابحثي عن مهمة..." style="flex:1"><select class="field" id="taskFilter"><option value="all">كل المهام</option><option value="active">غير المكتملة</option><option value="done">المكتملة</option></select><button class="btn" id="addTaskBtn2">＋ مهمة جديدة</button></div>
     <div class="grid task-grid" id="taskGrid"></div>
   </section>
 
+  <section class="page" id="page-quiz">
+    <div class="page-intro"><div class="eyebrow">AI STUDY PARTNER</div><h2>كويز الذكاء الاصطناعي ✨</h2><div class="muted small">ارفعي ملف المحاضرة، والذكاء الاصطناعي يطلع لك أسئلة من محتواه مع التصحيح والشرح.</div></div>
+    <div class="grid two">
+      <div class="card">
+        <div class="section-head"><h2>📎 ملف المذاكرة</h2><span class="tag cyan">PDF · DOCX · TXT</span></div>
+        <label for="quizFile" class="quiz-drop" id="quizDrop"><div style="font-size:35px;margin-bottom:8px">☁️</div><b>اضغطي هنا لاختيار الملف</b><div class="small muted" style="margin-top:7px">أو اسحبيه هنا · الحد الأقصى 10MB</div><div class="small muted" style="margin-top:5px">يدعم PDF وWord وTXT وMarkdown</div></label>
+        <input type="file" id="quizFile" accept=".pdf,.docx,.txt,.md,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown" hidden>
+        <div id="quizFileInfo" class="small muted" style="margin-top:10px">ما اخترتي ملف للحين.</div>
+        <label class="small muted" for="quizTopic" style="display:block;margin:16px 0 6px">تركيز إضافي (اختياري)</label><input class="field" id="quizTopic" placeholder="مثال: ركزي على قوانين الاحتكاك" style="width:100%">
+        <div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:14px;gap:12px">
+          <div><label class="small muted" for="quizCount" style="display:block;margin-bottom:6px">عدد الأسئلة</label><select class="field" id="quizCount" style="width:100%"><option value="5">5 أسئلة</option><option value="10" selected>10 أسئلة</option><option value="15">15 سؤال</option><option value="20">20 سؤال</option></select></div>
+          <div><label class="small muted" for="quizType" style="display:block;margin-bottom:6px">نوع الأسئلة</label><select class="field" id="quizType" style="width:100%"><option value="mcq">اختيار من متعدد</option><option value="mixed">متنوعة</option><option value="truefalse">صح أو خطأ</option></select></div>
+        </div>
+        <label class="small muted" for="quizApiKey" style="display:block;margin:16px 0 6px">مفتاح Gemini API</label><input class="field" id="quizApiKey" type="password" autocomplete="off" placeholder="الصقي المفتاح هنا" style="width:100%">
+        <div class="small muted" style="line-height:1.8;margin-top:7px">عشان يشتغل توليد الأسئلة، تحتاجين مفتاح مجاني/متاح من <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" style="color:var(--cyan)">Google AI Studio</a>. المفتاح ما ينحفظ في الموقع ولا يتشارك مع صديقتك؛ استخدميه بنفسك فقط.</div>
+        <button class="btn" id="makeQuizBtn" style="width:100%;margin-top:16px">✨ أنشئي الكويز</button><div id="quizStatus" class="small muted" aria-live="polite" style="margin-top:10px;line-height:1.8"></div>
+      </div>
+      <div class="card"><div class="section-head"><h2>كيف بيكون الكويز؟</h2><span class="tag">SMART REVIEW</span></div><div class="challenge"><h3>🧠 من محتوى ملفك</h3><p>يركز على المفاهيم والتعاريف والقوانين والأمثلة الموجودة في الملف، بدون إضافة معلومات من خارج المصدر عمدًا.</p></div><div class="challenge"><h3>🎯 يغطي أكبر قدر ممكن</h3><p>يختار نقاطًا متنوعة من أجزاء الملف بدل ما يكرر نفس الفكرة. إذا الملف طويل جدًا، قد تكون التغطية تقريبية.</p></div><div class="challenge"><h3>✅ تصحيح بعد الحل</h3><p>جاوبي أول، وبعدها شوفي الدرجة والإجابة الصحيحة وسببها. تقدرين تعيدين الكويز متى ما تبين.</p></div><p class="small muted" style="line-height:1.9">ملاحظة: الملف يُرسل إلى خدمة Gemini لتوليد الأسئلة. لا ترفعين ملفات فيها معلومات شخصية أو خاصة.</p></div>
+    </div>
+    <div class="card" id="quizResultCard" style="margin-top:15px;display:none"><div id="quizResult"></div></div>
+  </section>
+
   <section class="page" id="page-arena">
-    <div class="page-intro"><div class="eyebrow">CHALLENGE ACCEPTED?</div><h2>ساحة التحديات</h2><div class="muted small">مواجهات ودّية وميزات للتقارب بينك وبين صديقتك.</div></div>
+    <div class="page-intro"><div class="eyebrow">CHALLENGE ACCEPTED?</div><h2>ساحة التحديات</h2><div class="muted small">مواجهات ودّية بمخاطر محدودة. اختاري تحديًا والتزمي بشروطه قبل البداية.</div></div>
     <div class="grid challenge-grid">
-      <div class="card"><div class="eyebrow">FRIENDSHIP BOX</div><h2>صندوق الترابط الصديق 🎁</h2><p class="muted small" style="line-height:1.9">افتحي الصندوق لاختبار مدى تقاربكم، أو للحصول على تحدي تعاوني!</p><button class="btn" style="margin-top:15px" onclick="openFriendBox()">فتح الصندوق السرّي</button></div>
-      <div class="card"><div class="eyebrow">STUDY SPRINT</div><h2>جلسة تركيز مشتركة</h2><p class="muted small" style="line-height:1.9">ابدئي عداد التركيز.</p><div id="durChips" style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 8px"></div><div class="big-score" id="timerDisplay">25:00</div><div class="toolbar" style="margin-top:12px"><button class="btn" id="timerStart">ابدئي المؤقت</button><button class="btn ghost" id="timerReset">إعادة</button></div></div>
-      <div class="card"><div class="eyebrow">TODAY</div><h2>تقدمك اليوم والستريك</h2><div id="focusCard"></div></div>
-      <div class="card"><div class="eyebrow">WEEKLY BOSS</div><h2>أسبوع التفوق الجامعي</h2><div class="big-score" id="arenaBoss">0/5</div><div class="progress-line"><span id="arenaBossBar" style="width:0%"></span></div></div>
-    </div>
-  </section>
-
-  <!-- صفحة كويز الذكاء الاصطناعي -->
-  <section class="page" id="page-aiquiz">
-    <div class="page-intro"><div class="eyebrow">AI STUDY ASSISTANT</div><h2>كويز الذكاء الاصطناعي</h2><div class="muted small">ارفعي ملف المادة أو الصقي محتوى الدرس (يدعم النصوص الكبيرة) لتوليد الأسئلة فوراً!</div></div>
-    <div class="card">
-      <label>تركيز أو توجيه خاص (اختياري):</label>
-      <input class="field" id="aiFocus" placeholder="مثال: ركزي على القوانين والمقارنات">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
-        <div><label>عدد الأسئلة</label><select class="field" id="aiCount"><option value="5">5 أسئلة</option><option value="10" selected>10 أسئلة</option><option value="15">15 سؤالاً</option></select></div>
-        <div><label>نوع الأسئلة</label><select class="field" id="aiType"><option value="اختيار من متعدد">اختيار من متعدد</option><option value="صح وخطأ">صح وخطأ</option></select></div>
-      </div>
-      <label style="margin-top:12px">محتوى الدرس أو الملخص (مساحة واسعة للتلخيص أو لصق المحتوى):</label>
-      <textarea class="field" id="aiText" rows="8" placeholder="اكتبي أو الصقي محتوى المحاضرة أو الملخص هنا..."></textarea>
-      <label style="margin-top:12px">أو ارفعِي ملف نصي (يدعم الملفات الكبيرة):</label>
-      <input class="field" type="file" id="aiFile" accept=".txt,.md,.json,.csv" onchange="handleFile(this)">
-      <button class="btn" style="margin-top:16px;width:100%" onclick="generateQuiz()">✨ أنشئي الكويز بذكاء</button>
-    </div>
-    <div class="card" id="quizContainer" style="margin-top:15px;display:none">
-      <div class="section-head"><h2>اختبار الفهم الذكي</h2></div>
-      <div id="quizContent" style="line-height:1.9;white-space:pre-wrap"></div>
-    </div>
-  </section>
-
-  <!-- صفحة الشات الحي والمباشر -->
-  <section class="page" id="page-chat">
-    <div class="page-intro"><div class="eyebrow">LIVE CHAT</div><h2>محادثة الأكاديمية</h2><div class="muted small">تحدثي مع صديقتك مباشرة وشاركا التحفيز.</div></div>
-    <div class="card" style="display:flex;flex-direction:column;height:65vh">
-      <div id="chatMessages" style="flex:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)"></div>
-      <div style="display:flex;gap:10px;margin-top:12px">
-        <input class="field" id="chatInput" placeholder="اكتبي رسالة لصديقتك..." style="flex:1" onkeydown="if(event.key==='Enter')sendChatMessage()">
-        <button class="btn" onclick="sendChatMessage()">إرسال ✈</button>
-      </div>
+      <div class="card"><div class="eyebrow">DAILY DUEL</div><h2>مواجهة التركيز</h2><p class="muted small" style="line-height:1.9">أنجزي مهمة دراسية واحدة اليوم. كل وحدة تكمل مهمتها تحصل على نقاطها الأساسية، والفائزة بأكبر عدد XP في هذا التحدي تحصل على مكافأة.</p><div class="progress-line"><span style="width:50%"></span></div><div class="small muted">مواجهة تجريبية · تتجدد يدويًا</div><button class="btn" style="margin-top:15px" id="duelBtn">قبول المواجهة +10 نقاط</button></div>
+      <div class="card"><div class="eyebrow">HIGH STAKES</div><h2>رهان النقاط</h2><p class="muted small" style="line-height:1.9">اختاري هدفًا دراسيًا واضحًا وراهني بعدد محدود من نقاط الأسبوع. إذا أنجزتِ الهدف تربحين مكافأة؛ وإذا لم تنجزيه تخسرين الرهان.</p><div class="challenge" style="margin-top:15px"><div class="stat-top">الحد الأقصى للرهان <span>⚠</span></div><div class="big-score">15 <span style="font-size:14px;color:var(--muted)">PTS</span></div></div><button class="btn danger" id="betBtn">إنشاء رهان</button></div>
+      <div class="card"><div class="eyebrow">STUDY SPRINT</div><h2>جلسة تركيز</h2><p class="muted small" style="line-height:1.9">اختاري المدة اللي تناسبك. كل ما طالت الجلسة زادت المكافأة، وبقفل التركيز تاخذين +25%.</p><div id="durChips" style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 8px"></div><input class="field" id="durCustom" type="number" inputmode="numeric" min="10" max="180" placeholder="أو اكتبي مدة ثانية بالدقايق (10 – 180)"><label style="display:flex;gap:10px;align-items:center;margin:14px 0 4px;cursor:pointer"><input type="checkbox" id="lockMode" style="width:20px;height:20px"> <span>🔒 قفل التركيز</span></label><div class="small muted" style="line-height:1.8">يغطي الشاشة ويمنع الخروج من الصفحة. لو خرجتِ أكثر من 10 ثواني تنتهي الجلسة بدون مكافأة.</div><details style="margin-top:10px"><summary class="small" style="cursor:pointer;color:#a99bff">💡 كيف أقفل باقي التطبيقات؟</summary><p class="small muted" style="line-height:2;margin-top:8px">الموقع ما يقدر يقفل التطبيقات، بس الآيفون يقدر: افتحي <b>الإعدادات ← تسهيلات الاستخدام ← الوصول الموجّه (Guided Access)</b> وشغّليه. بعدها وأنتِ داخل الموقع اضغطي زر الجنب <b>3 مرات</b> ثم <b>ابدأ</b>، وينقفل الجوال على سفاري بس لين تفكينه بالرمز.</p></details><div class="big-score" id="timerDisplay">25:00</div><div class="toolbar" style="margin-top:12px"><button class="btn" id="timerStart">ابدئي المؤقت</button><button class="btn ghost" id="timerReset">إعادة</button></div></div>
+      <div class="card"><div class="eyebrow">TODAY</div><h2>تقدمك اليوم</h2><div id="focusCard"></div></div>
+      <div class="card" style="grid-column:1/-1"><div class="section-head"><h2>📚 قاعة المذاكرة المشتركة</h2><span class="tag cyan"><span class="live-dot"></span> LIVE</span></div><p class="muted small" style="line-height:1.8">ابدئي جلسة وبتظهر لصديقتك مباشرة. إذا انضمت، بيكون العدّاد نفسه عندكم الاثنين.</p><div id="sharedRoom"></div><div class="toolbar" style="margin-top:12px"><button class="btn" id="startSharedBtn" onclick="startSharedFocus()">ابدئي قاعة المذاكرة</button><button class="btn ghost" id="notifyBtn" onclick="enableStudyNotifications()">تفعيل إشعارات المتصفح</button></div><div class="small muted" id="notifyHelp" style="line-height:1.8;margin-top:5px">التنبيه داخل الموقع لحظي. إشعار المتصفح يحتاج إذن، ويظهر عادةً إذا كان الموقع مفتوحًا بالخلفية.</div></div>
+      <div class="card" style="grid-column:1/-1"><div class="section-head"><h2>💬 دردشة المذاكرة</h2><span class="tag">REAL-TIME</span></div><div id="chatLog" class="chat-log" aria-live="polite"></div><div class="toolbar" style="margin:10px 0 0"><input class="field" id="chatInput" maxlength="500" placeholder="اكتبي ملاحظة أو كلمة تشجيع..." style="flex:1"><button class="btn" id="chatSendBtn" onclick="sendChatMessage()">إرسال</button></div><div class="small muted" style="margin-top:6px">الرسائل مشتركة بين الحسابين وتظهر مع الاسم والوقت.</div></div>
+      <div class="card" style="grid-column:1/-1"><div class="section-head"><h2>🔐 الأوسمة المخفية</h2><span class="tag gold" id="badgeCount">0 مفتوح</span></div><p class="muted small" style="line-height:1.8">بعض الأوسمة تبقى مجهولة لين تحققين شرطها. افتحيها بالإنجاز، مو بالتخمين.</p><div id="secretBadges" class="badge-grid"></div></div>
+      <div class="card"><div class="eyebrow">WEEKLY BOSS</div><h2>أسبوع التفوق الجامعي</h2><p class="muted small" style="line-height:1.9">أنجزي 5 مهام دراسية مؤهلة. التقدم يتحدث تلقائيًا من المهام المكتملة.</p><div class="big-score" id="arenaBoss">0/5</div><div class="progress-line"><span id="arenaBossBar" style="width:0%"></span></div></div>
     </div>
   </section>
 
   <section class="page" id="page-leaderboard">
-    <div class="page-intro"><div class="eyebrow">RANK. COMPETE. REPEAT.</div><h2>لوحة المتصدرين</h2></div>
-    <div class="grid two"><div class="card"><div class="section-head"><h2>ترتيب الموسم حسب XP</h2></div><div id="fullLeaderboard"></div></div><div class="card"><div class="section-head"><h2>مقارنة الحسابين</h2></div><div id="comparison"></div><button class="btn ghost" id="resetWeek" style="margin-top:15px">إعادة ضبط نقاط الأسبوع</button></div></div>
+    <div class="page-intro"><div class="eyebrow">RANK. COMPETE. REPEAT.</div><h2>لوحة المتصدرين</h2><div class="muted small">المستويات تراكمية، أما نقاط المنافسة فتُستخدم لتحديد فائزة الأسبوع.</div></div>
+    <div class="grid two"><div class="card"><div class="section-head"><h2>ترتيب الموسم حسب XP</h2><span class="tag">ALL-TIME</span></div><div id="fullLeaderboard"></div></div><div class="card"><div class="section-head"><h2>مقارنة الحسابين</h2></div><div id="comparison"></div><div class="challenge" style="margin-top:20px"><h3>كيف تفوزين؟</h3><p>أنجزي مهامًا ذات قيمة حقيقية، شاركي في التحديات، ولا تعتمدي على كثرة المهام السهلة فقط.</p></div><button class="btn ghost" id="resetWeek">إعادة ضبط نقاط الأسبوع</button></div></div>
   </section>
 
   <section class="page" id="page-world">
-    <div class="page-intro"><div class="eyebrow">YOUR SPACE</div><h2>عالمي الافتراضي</h2></div>
-    <div class="card" style="margin-bottom:15px"><div class="eyebrow">ACADEMY ROOM</div><div style="font-size:70px;text-align:center;padding:25px 0;background:linear-gradient(140deg,#17142d,#172a39);border-radius:13px;margin:12px 0">🌙 🪴 📚</div><h2 id="roomTitle" style="text-align:center">غرفة الباحثة</h2><div id="ownedItems" class="toolbar" style="justify-content:center"></div></div>
+    <div class="page-intro"><div class="eyebrow">YOUR SPACE, YOUR PROGRESS</div><h2>عالمي الافتراضي</h2><div class="muted small">استخدمي العملات لفتح عناصر تجميلية. كل عنصر تملكينه يبقى في مجموعتك.</div></div>
+    <div class="card" style="margin-bottom:15px"><div class="eyebrow">ACADEMY ROOM</div><div style="font-size:70px;text-align:center;padding:25px 0;background:linear-gradient(140deg,#17142d,#172a39);border-radius:13px;margin:12px 0">🌙 🪴 📚</div><h2 id="roomTitle" style="text-align:center">غرفة الباحثة</h2><p class="muted small" style="text-align:center">طوّري عالمك مع كل إنجاز.</p><div id="ownedItems" class="toolbar" style="justify-content:center"></div></div>
     <button class="btn" data-goto="shop">استكشاف المتجر ←</button>
   </section>
 
   <section class="page" id="page-shop">
-    <div class="page-intro"><div class="eyebrow">SPEND YOUR COINS</div><h2>المتجر</h2></div>
+    <div class="page-intro"><div class="eyebrow">SPEND YOUR COINS</div><h2>المتجر</h2><div class="muted small">العملات للتخصيص فقط، ولا تمنح أفضلية تنافسية.</div></div>
     <div class="grid task-grid" id="shopGrid"></div>
   </section>
 
   <section class="page" id="page-profile">
-    <div class="page-intro"><div class="eyebrow">PLAYER PROFILE</div><h2>ملفي الشخصي</h2></div>
+    <div class="page-intro"><div class="eyebrow">PLAYER PROFILE</div><h2>ملفي الشخصي</h2><div class="muted small">تابعي تقدمك وغيّري اسمك داخل الأكاديمية.</div></div>
     <div class="grid two"><div class="card"><div style="display:flex;gap:15px;align-items:center"><div class="avatar" id="profileAvatar" style="width:60px;height:60px;font-size:24px">N</div><div><h2 id="profileName" style="margin:0 0 6px">نداوي</h2><div class="muted small" id="profileRank">Rookie · Level 1</div></div></div><div class="progress-line" style="margin-top:20px"><span id="profileBar" style="width:0%"></span></div><div class="small muted" id="profileXPText"></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px"><button class="btn ghost" id="editName">تعديل الاسم</button><button class="btn" id="avatarBtn">🖼️ تغيير الأفتار</button></div></div><div class="card"><h2>إحصائياتك</h2><div id="profileStats"></div></div></div>
+    <div class="card" style="margin-top:15px"><div class="section-head"><h2>إعدادات النسخة التجريبية</h2></div><p class="muted small">البيانات تنحفظ تلقائيًا وتتشارك بينك وبين صديقتك عند الاتصال بالإنترنت. استخدمي التصدير للاحتفاظ بنسخة أو الاستيراد لاستعادتها.</p><div class="toolbar"><button class="btn ghost" id="exportData">تصدير البيانات JSON</button><label class="btn ghost" style="display:inline-flex;align-items:center;gap:8px">استيراد نسخة<input type="file" id="importData" accept=".json,application/json" hidden></label><button class="btn danger" id="resetData">إعادة ضبط كل البيانات</button></div></div>
   </section>
 </main>
 </div>
 <div class="toast" id="toast"></div>
 <div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"></div></div>
-
+<div id="focusLock" style="display:none;position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 30%,#241a45,#090b12 70%);flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(24px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px))">
+<div class="eyebrow" style="color:#a99bff;letter-spacing:3px">FOCUS MODE 🔒</div>
+<div id="flTime" style="font-size:clamp(64px,22vw,120px);font-weight:900;margin:18px 0;font-variant-numeric:tabular-nums">25:00</div>
+<div class="progress-line" style="width:min(320px,80vw)"><span id="flBar" style="width:0%"></span></div>
+<p class="muted" style="margin-top:22px;line-height:2;max-width:300px">ركّزي بس على مذاكرتك ✦<br>لا تطلعين من الصفحة، الجلسة تنتهي إذا خرجتِ أكثر من 10 ثواني.</p>
+<button class="btn ghost" id="flGiveUp" style="margin-top:28px">إنهاء الجلسة بدون مكافأة</button>
+</div>
 <script>
-// مفتاح الـ API مثبت في الخلفية بالكامل ولن يظهر لك مجدداً
-const GEMINI_API_KEY = "AIzaSyDE3Hk0zbdccWF2_X_8-pYrybHgwZHY4F0";
-
-const STORAGE_KEY='darkAcademyFriendActivation_v5';
-const initial=()=>({active:0,players:[],tasks:[],chat:[],feed:[{text:'بدأ الموسم الأول في الأكاديمية',time:'الآن'}],nextId:7});
+const STORAGE_KEY='darkAcademyFriendActivation_v2';
+const initial=()=>({active:0,players:[],tasks:[],feed:[{text:'بدأ الموسم الأول في الأكاديمية',time:'الآن'}],chat:[],focusRoom:null,nextId:7});
 let state;try{state=JSON.parse(localStorage.getItem(STORAGE_KEY))||initial()}catch(e){state=initial()}
 const levels=[['Rookie',0],['Scholar',100],['Strategist',300],['Elite',600],['Mastermind',1000]];
 const items=[{id:'plant',name:'نبتة نيون',emoji:'🪴',cost:25},{id:'books',name:'مكتبة الظل',emoji:'📚',cost:45},{id:'moon',name:'مصباح القمر',emoji:'🌙',cost:60},{id:'cat',name:'قط الأكاديمية',emoji:'🐈‍⬛',cost:90},{id:'crown',name:'تاج النخبة',emoji:'👑',cost:120},{id:'crystal',name:'بلورة بنفسجية',emoji:'🔮',cost:75}];
-const pageInfo={dashboard:['فوكس','أنتِ وصديقتك تختارون مهامكم بنفسكم.'],tasks:['إدارة المهام','حوّلي أهدافك الدراسية إلى خطوات واضحة.'],arena:['ساحة التحديات','المخاطرة محسوبة، والإنجاز هو الفيصل.'],aiquiz:['كويز الذكاء الاصطناعي','اختبري فهمك واصنعي أسئلتك بذكاء.'],chat:['المحادثة المشتركة','تواصلي لحظة بلحظة مع صديقتك.'],leaderboard:['لوحة المتصدرين','المنافسة تتجدد كل أسبوع.'],world:['عالمي الافتراضي','ابني مساحتك الخاصة بالعملات.'],shop:['المتجر','مكافآت تجميلية تستحق الإنجاز.'],profile:['ملفي الشخصي','إحصائياتك ومستواك.']};
-
+const pageInfo={dashboard:['Focus','أنتِ وصديقتك تختارون مهامكم بنفسكم.'],tasks:['إدارة المهام','حوّلي أهدافك الدراسية إلى خطوات واضحة.'],quiz:['كويز الذكاء الاصطناعي','ارفعي ملفك وخلي الذكاء الاصطناعي يختبر فهمك.'],arena:['ساحة التحديات','المخاطرة محسوبة، والإنجاز هو الفيصل.'],leaderboard:['لوحة المتصدرين','المنافسة تتجدد كل أسبوع.'],world:['عالمي الافتراضي','ابني مساحتك الخاصة بالعملات التي تكسبينها.'],shop:['المتجر','مكافآت تجميلية تستحق الإنجاز.'],profile:['ملفي الشخصي','إحصائياتك ومستواك في الأكاديمية.']};
+/* ===== مزامنة أونلاين — عدد غير محدود من اللاعبين ===== */
 const MAXP=40;
 let ME=null;try{let v=localStorage.getItem('da_me');if(v){ME=/^\d+$/.test(v)?('p'+v):v}}catch(e){}
 let cloudOn=false,applyingRemote=false,forceAll=false,pushTimer=null,mustPick=false,firstSnap=true,lastMineSig='';
@@ -149,24 +146,27 @@ const newId=()=>Date.now()*10+Math.floor(Math.random()*10);
 const clone=o=>JSON.parse(JSON.stringify(o));
 const SAFE_PID=/^[A-Za-z0-9_-]{1,40}$/;
 const orderP=(a,b)=>((a.joined||0)-(b.joined||0))||String(a.pid).localeCompare(String(b.pid));
-
 function normalize(st){
   if(!st||!Array.isArray(st.players))return st;
   st.players.forEach((p,i)=>{if(!p.pid)p.pid='p'+i});
   st.tasks=(st.tasks||[]).map(t=>typeof t.owner==='number'?Object.assign({},t,{owner:'p'+t.owner}):t);
-  st.chat=st.chat||[];
   st.players=st.players.filter(p=>(p.claimed||p.joined)&&SAFE_PID.test(String(p.pid))).sort(orderP);
+  st.feed=(st.feed||[]).filter(f=>f.text!=='حساب الصديقة ينتظر تفعيلها بنفسها');
+  st.chat=Array.isArray(st.chat)?st.chat:[];st.focusRoom=st.focusRoom||null;
+  st.players.forEach(p=>{p.badges=Array.isArray(p.badges)?p.badges:[];p.focusSessions=Array.isArray(p.focusSessions)?p.focusSessions:[]});
   return st;
 }
 function fixActive(){state.active=Math.max(0,state.players.findIndex(p=>p.pid===ME))}
 function stripFull(st){const c=clone(st);delete c.active;return c}
-function mineSig(st){const p=st.players.find(x=>x.pid===ME);if(ME==null||!p)return '';return JSON.stringify([p,st.tasks.filter(t=>t.owner===ME),st.chat.length])}
+function mineSig(st){const p=st.players.find(x=>x.pid===ME);if(ME==null||!p)return '';return JSON.stringify([p,st.tasks.filter(t=>t.owner===ME)])}
 function mergeState(remote,local,me){
   const out=clone(remote);if(me==null)return out;
   const mine=local.players.find(p=>p.pid===me);
   out.players=out.players.filter(p=>p.pid!==me).concat(mine?[clone(mine)]:[]).sort(orderP);
   out.tasks=local.tasks.filter(t=>t.owner===me).concat((remote.tasks||[]).filter(t=>t.owner!==me)).sort((a,b)=>b.id-a.id);
-  out.chat=remote.chat||[];
+  const seen=new Set(),feed=[];
+  for(const f of [].concat(local.feed||[],remote.feed||[])){const k=(f.ts||0)+'|'+f.text;if(seen.has(k))continue;seen.add(k);feed.push(f)}
+  feed.sort((a,b)=>(b.ts||0)-(a.ts||0));out.feed=feed.slice(0,8);
   return out;
 }
 function setSync(ok,msg){const d=document.getElementById('syncDot'),t=document.getElementById('syncText');if(d)d.style.color=ok?'var(--green)':'var(--red)';if(t)t.textContent=msg}
@@ -181,7 +181,7 @@ async function pushNow(){
   try{
     await window.cloud.transact(remote=>(all||!remote)?stripFull(state):mergeState(normalize(remote),state,ME));
     lastMineSig=sig;setSync(true,'متصل — البيانات مشتركة');
-  }catch(e){forceAll=all||forceAll;setSync(false,'انقطع الاتصال');setTimeout(()=>save(),4000)}
+  }catch(e){forceAll=all||forceAll;setSync(false,'انقطع الاتصال — بنعيد المحاولة');setTimeout(()=>save(),4000)}
 }
 function applyRemote(remote){
   if(!remote){window.cloud.transact(r=>r||stripFull(initial())).catch(()=>{});return}
@@ -206,8 +206,8 @@ function initCloud(){
   setSync(true,'متصل — البيانات مشتركة');
   window.cloud.subscribe(applyRemote,e=>{
     cloudOn=false;console.error(e);ensureLocalPlayer();
-    document.getElementById('switchBtn').textContent='محلي ↔';
-    setSync(false,'غير متصل');
+    document.getElementById('switchBtn').textContent='يحتاج اتصال ↔';
+    setSync(false,'غير متصل — يعمل محليًا');toast('تعذر الاتصال بقاعدة البيانات');
   });
 }
 function ensureLocalPlayer(){
@@ -219,7 +219,7 @@ function openIdentity(){
   mustPick=ME==null;
   const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
   const list=state.players.filter(p=>SAFE_PID.test(String(p.pid)));
-  modal.innerHTML=`<h2>أهلًا بك في الأكاديمية ✦</h2><p class="muted small" style="line-height:1.9">اكتبي اسمك وانضمي للمنافسة.</p><label>اسمك</label><input class="field" id="idName" maxlength="24" placeholder="اكتبي اسمك"><div class="modal-actions" style="flex-direction:column;align-items:stretch"><button class="btn" onclick="joinNew()">انضمام ✦</button>${mustPick?'':'<button class="btn ghost" onclick="closeModal()">إلغاء</button>'}</div>${list.length?`<p class="muted small" style="margin:16px 0 8px">حساب سابق:</p><div style="display:flex;flex-direction:column;gap:8px;max-height:28vh;overflow:auto">${list.map(p=>`<button class="btn ghost" onclick="enterAs('${p.pid}')">${escapeHtml(p.name)}</button>`).join('')}</div>`:''}`;
+  modal.innerHTML=`<h2>أهلًا بك في الأكاديمية ✦</h2><p class="muted small" style="line-height:1.9">اكتبي اسمك وانضمي للمنافسة، وأي وحدة معها الرابط تقدر تسجّل. المركز الأول ياخذ كأس 🏆</p><label>اسمك</label><input class="field" id="idName" maxlength="24" placeholder="اكتبي اسمك"><div class="modal-actions" style="flex-direction:column;align-items:stretch"><button class="btn" onclick="joinNew()">انضمام ✦</button>${mustPick?'':'<button class="btn ghost" onclick="closeModal()">إلغاء</button>'}</div>${list.length?`<p class="muted small" style="margin:16px 0 8px">عندك حساب من قبل؟ اضغطي عليه وتدخلين مباشرة:</p><div style="display:flex;flex-direction:column;gap:8px;max-height:28vh;overflow:auto">${list.map(p=>`<button class="btn ghost" onclick="enterAs('${p.pid}')">${escapeHtml(p.name)}</button>`).join('')}</div>`:''}`;
 }
 function enterAs(pid){
   if(!state.players.some(p=>p.pid===pid))return;
@@ -230,20 +230,42 @@ function enterAs(pid){
 function joinNew(){
   const n=document.getElementById('idName').value.trim();
   if(!n){toast('اكتبي اسمك أول');return}
+  if(state.players.length>=MAXP){toast('الأكاديمية ممتلئة');return}
   const pid='u'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
   ME=pid;lastMineSig='';
   state.players.push({pid,name:n,activated:true,claimed:true,joined:Date.now(),xp:0,coins:0,weekly:0,done:0,streak:0,owned:[],history:[]});
   state.players.sort(orderP);fixActive();addFeed(`انضمّت ${n} إلى الأكاديمية`);
   try{localStorage.setItem('da_me',pid)}catch(e){}
-  mustPick=false;closeModal();render();toast('أهلًا '+n);
+  mustPick=false;closeModal();render();toast('أهلًا '+n);setTimeout(openAvatar,400);
 }
+const IMG_OK=/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+\/=]+$/;
+function av(x){return x.avatar||(x.name&&x.name[0])||'A'}
+function avHtml(x){if(x.avatar&&IMG_OK.test(x.avatar)&&x.avatar.length<200000)return `<img src="${x.avatar}" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block">`;return escapeHtml(x.avatar&&!x.avatar.startsWith('data:')?x.avatar:((x.name&&x.name[0])||'A'))}
 const AVATARS=['🦊','🐱','🐰','🐼','🦋','🌸','🌙','⭐','🔮','🐻','🦄','🍓','🎀','🧸','🐧','🦉','🌷','🐈‍⬛'];
 function openAvatar(){
   const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
-  modal.innerHTML=`<h2>اختاري أفتارك</h2><div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:14px 0">${AVATARS.map(e=>`<button class="btn ghost" style="font-size:22px;padding:8px 0" onclick="setAvatar('${e}')">${e}</button>`).join('')}</div><div class="modal-actions"><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`;
+  modal.innerHTML=`<h2>اختاري أفتارك</h2><p class="muted small">يظهر لك ولصديقتك في المتصدرين والمقارنة.</p><div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:14px 0">${AVATARS.map(e=>`<button class="btn ghost" style="font-size:22px;padding:8px 0" onclick="setAvatar('${e}')">${e}</button>`).join('')}</div><label class="btn" style="display:block;text-align:center;margin-bottom:10px">📷 صورة من جوالي<input type="file" accept="image/*" hidden onchange="onPhoto(this)"></label><div class="modal-actions"><button class="btn ghost" onclick="setAvatar('')">الحرف الأول من اسمي</button><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`;
+}
+function onPhoto(inp){
+  const f=inp.files&&inp.files[0];inp.value='';if(!f)return;
+  if(!/^image\//.test(f.type)){toast('اختاري صورة');return}
+  const rd=new FileReader();
+  rd.onerror=()=>toast('ما قدرت أقرأ الصورة');
+  rd.onload=()=>{
+    const im=new Image();
+    im.onerror=()=>toast('الصورة غير مدعومة، جربي صورة ثانية');
+    im.onload=()=>{
+      const S=128,c=document.createElement('canvas');c.width=S;c.height=S;
+      const ctx=c.getContext('2d'),m=Math.min(im.width,im.height),sx=(im.width-m)/2,sy=(im.height-m)/2;
+      ctx.fillStyle='#111521';ctx.fillRect(0,0,S,S);ctx.drawImage(im,sx,sy,m,m,0,0,S,S);
+      setAvatar(c.toDataURL('image/jpeg',0.8));
+    };
+    im.src=rd.result;
+  };
+  rd.readAsDataURL(f);
 }
 function setAvatar(e){player().avatar=e;closeModal();render();toast('تم تغيير الأفتار')}
-function ago(ts){const s=Math.max(0,(Date.now()-ts)/1000);if(s<60)return 'الآن';if(s<3600)return 'قبل '+Math.floor(s/60)+' دقيقة';return 'قبل '+Math.floor(s/3600)+' ساعة'}
+function ago(ts){const s=Math.max(0,(Date.now()-ts)/1000);if(s<60)return 'الآن';if(s<3600)return 'قبل '+Math.floor(s/60)+' دقيقة';if(s<86400)return 'قبل '+Math.floor(s/3600)+' ساعة';return 'قبل '+Math.floor(s/86400)+' يوم'}
 const GHOST={name:'',xp:0,coins:0,weekly:0,done:0,streak:0,owned:[],history:[],activated:false};
 function player(i=state.active){return state.players[i]||GHOST}
 const P=()=>player().pid;
@@ -251,114 +273,107 @@ function level(xp){let n=0;for(let i=0;i<levels.length;i++)if(xp>=levels[i][1])n
 function toast(msg){let el=document.getElementById('toast');el.textContent=msg;el.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>el.style.display='none',2800)}
 function addFeed(text){state.feed.unshift({text,time:'الآن',ts:Date.now()});state.feed=state.feed.slice(0,8)}
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function switchPlayer(){if(cloudOn){openIdentity();return}toast('يحتاج اتصال')}
+function switchPlayer(){if(cloudOn){openIdentity();return}toast('يحتاج اتصال بالإنترنت')}
 function nav(page){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id==='page-'+page));document.querySelectorAll('.nav button[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page));document.getElementById('pageTitle').textContent=pageInfo[page][0];document.getElementById('pageSub').textContent=pageInfo[page][1];document.getElementById('sidebar').classList.remove('open');render();window.scrollTo({top:0,behavior:'smooth'})}
-
 function render(){
-  save();let p=player(),lv=level(p.xp),done=state.tasks.filter(t=>t.owner===P()&&t.done).length,studies=state.tasks.filter(t=>t.owner===P()&&t.done&&t.subject!=='شخصي').length;
-  document.getElementById('topName').textContent=p.name;
-  let avHtmlStr=p.avatar?p.avatar:((p.name&&p.name[0])||'N');
-  document.getElementById('topAvatar').innerHTML=avHtmlStr;
-  document.getElementById('topLevel').textContent=`Level ${lv.index+1} · ${lv.name}`;
-  document.getElementById('myXP').textContent=p.xp;document.getElementById('myCoins').textContent=p.coins;document.getElementById('myDone').textContent=done;document.getElementById('myWeekly').textContent=p.weekly;
-  
-  let mine=state.tasks.filter(t=>t.owner===P());
-  document.getElementById('dashboardTasks').innerHTML=mine.filter(t=>!t.done).slice(0,4).map(taskRow).join('')||'<div class="empty">كل المهام مكتملة! ✦</div>';
-  let progress=Math.min(100,studies/5*100);
-  document.getElementById('bossBar').style.width=progress+'%';document.getElementById('bossProgress').textContent=`${Math.min(studies,5)} / 5 مهام`;
-  document.getElementById('arenaBoss').textContent=`${Math.min(studies,5)}/5`;document.getElementById('arenaBossBar').style.width=progress+'%';
-  
-  let ordered=state.players.map((x,i)=>({...x,i})).sort((a,b)=>b.weekly-a.weekly);
-  document.getElementById('miniLeaderboard').innerHTML=ordered.slice(0,5).map((x,i)=>rankRow(x,i,'weekly',ordered)).join('')||'<div class="empty">لا أحد انضم بعد</div>';
-  {let byXp=state.players.map((x,i)=>({...x,i})).sort((a,b)=>b.xp-a.xp);document.getElementById('fullLeaderboard').innerHTML=byXp.map((x,i)=>rankRow(x,i,'xp',byXp)).join('')||'<div class="empty">لا أحد</div>'}
-  
-  document.getElementById('activityFeed').innerHTML=state.feed.slice(0,4).map(f=>`<div class="quest"><div class="stat-icon">✦</div><div class="quest-info"><div class="quest-title">${escapeHtml(f.text)}</div><div class="quest-meta">${escapeHtml(ago(f.ts))}</div></div></div>`).join('');
-  document.getElementById('comparison').innerHTML=state.players.map((x,i)=>`<div class="player"><div class="avatar">${x.avatar||x.name[0]}</div><div class="player-info"><div class="player-name">${escapeHtml(x.name)}</div><div class="progress-line"><span style="width:${Math.min(100,x.xp/10)}%"></span></div></div><div><div class="player-score">${x.xp} XP</div></div></div>`).join('');
-  
-  renderTasks();renderShop();renderProfile();renderWorld();renderFocusCard();renderChat();
-}
-
+save();let p=player(),lv=level(p.xp),done=state.tasks.filter(t=>t.owner===P()&&t.done).length,studies=state.tasks.filter(t=>t.owner===P()&&t.done&&t.subject!=='شخصي').length;
+document.getElementById('topName').textContent=p.name;document.getElementById('topAvatar').innerHTML=avHtml(p);document.getElementById('topLevel').textContent=`Level ${lv.index+1} · ${lv.name}`;document.getElementById('myXP').textContent=p.xp;document.getElementById('myCoins').textContent=p.coins;document.getElementById('myDone').textContent=done;document.getElementById('myWeekly').textContent=p.weekly;document.getElementById('xpFoot').textContent=lv.next?`باقي ${lv.next-p.xp} XP للمستوى التالي`:'وصلتِ أعلى رتبة';document.getElementById('weeklyFoot').textContent='المركز '+(state.players.slice().sort((a,b)=>b.weekly-a.weekly).findIndex(x=>x===p)+1)+' هذا الأسبوع';
+let mine=state.tasks.filter(t=>t.owner===P());document.getElementById('dashboardTasks').innerHTML=mine.filter(t=>!t.done).slice(0,4).map(taskRow).join('')||'<div class="empty">كل المهام مكتملة! أضيفي مهمة جديدة ✦</div>';
+let progress=Math.min(100,studies/5*100);document.getElementById('bossBar').style.width=progress+'%';document.getElementById('bossProgress').textContent=`${Math.min(studies,5)} / 5 مهام مكتملة`;document.getElementById('arenaBoss').textContent=`${Math.min(studies,5)}/5`;document.getElementById('arenaBossBar').style.width=progress+'%';
+let ordered=state.players.map((x,i)=>({...x,i})).sort((a,b)=>b.weekly-a.weekly);document.getElementById('miniLeaderboard').innerHTML=ordered.slice(0,5).map((x,i)=>rankRow(x,i,'weekly',ordered)).join('')||'<div class="empty">لا أحد انضم بعد</div>';{let byXp=state.players.map((x,i)=>({...x,i})).sort((a,b)=>b.xp-a.xp);document.getElementById('fullLeaderboard').innerHTML=byXp.map((x,i)=>rankRow(x,i,'xp',byXp)).join('')||'<div class="empty">لا أحد انضم بعد</div>'}
+document.getElementById('activityFeed').innerHTML=state.feed.slice(0,4).map(f=>`<div class="quest"><div class="stat-icon">✦</div><div class="quest-info"><div class="quest-title">${escapeHtml(f.text)}</div><div class="quest-meta">${escapeHtml(f.ts?ago(f.ts):f.time)}${reactBar(f)}</div></div></div>`).join('');
+document.getElementById('comparison').innerHTML=state.players.map((x,i)=>`<div class="player"><div class="avatar ${i?'pink':''}">${avHtml(x)}</div><div class="player-info"><div class="player-name">${escapeHtml(x.name)}</div><div class="progress-line"><span style="width:${Math.min(100,x.xp/10)}%"></span></div><div class="player-level">${level(x.xp).name}</div></div><div><div class="player-score">${x.xp} XP</div><div class="small muted" style="text-align:left">${x.weekly} أسبوعيًا</div></div></div>`).join('');
+renderTasks();renderShop();renderProfile();renderWorld();renderFocusCard();renderSocialFeatures();renderSecretBadges()}
 function taskRow(t){return `<div class="quest"><button class="check ${t.done?'done':''}" onclick="toggleTask(${t.id})">${t.done?'✓':''}</button><div class="quest-info"><div class="quest-title" style="${t.done?'text-decoration:line-through;color:#8991a6':''}">${escapeHtml(t.title)}</div><div class="quest-meta">${escapeHtml(t.subject)} · ${escapeHtml(t.difficulty)}</div></div><div class="xp">+${t.xp} XP</div></div>`}
-function rankRow(x,i,key,arr){const r=1+arr.filter(y=>y[key]>x[key]).length;return `<div class="rank-row"><div class="rank-no">${r}</div><div class="avatar" style="width:31px;height:31px">${x.avatar||x.name[0]}</div><div class="rank-name">${escapeHtml(x.name)} ${x.pid===P()?'<span class="tag">أنتِ</span>':''}</div><div class="rank-points">${x[key]}</div></div>`}
-function renderTasks(){let tasks=state.tasks.filter(t=>t.owner===P());document.getElementById('taskGrid').innerHTML=tasks.map(t=>`<div class="task-card ${t.done?'completed':''}"><div style="display:flex;justify-content:space-between"><span class="tag">${escapeHtml(t.subject)}</span></div><h3>${escapeHtml(t.title)}</h3><div class="task-bottom"><span class="xp">+${t.xp} XP</span><button class="btn ${t.done?'ghost':''}" onclick="toggleTask(${t.id})">${t.done?'إلغاء':'إنجاز ✓'}</button></div></div>`).join('')||'<div class="empty">لا توجد مهام.</div>'}
-function toggleTask(id){let t=state.tasks.find(x=>x.id===id);if(!t)return;let p=player();t.done=!t.done;if(t.done){p.xp+=t.xp;p.coins+=t.coins;p.weekly+=5;p.done++;addFeed(`${p.name} أنجزت: ${t.title}`);toast('مهمة مكتملة! +'+t.xp+' XP')}else{p.xp-=t.xp;p.done--;}render()}
-function createTask(){let title=document.getElementById('mTitle').value.trim();if(!title)return;state.tasks.unshift({id:newId(),title,subject:document.getElementById('mSubject').value,difficulty:'متوسطة',xp:15,coins:5,done:false,owner:P()});closeModal();render();toast('تمت الإضافة')}
-function openModal(t){document.getElementById('modalBackdrop').style.display='grid';document.getElementById('modal').innerHTML=`<h2>＋ مهمة جديدة</h2><label>اسم المهمة</label><input class="field" id="mTitle" placeholder="مثال: مذاكرة الجافا"><label>المادة</label><select class="field" id="mSubject"><option>برمجة</option><option>رياضيات</option><option>فيزياء</option><option>إنجليزي</option></select><div class="modal-actions"><button class="btn" onclick="createTask()">حفظ</button><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`}
-function closeModal(){document.getElementById('modalBackdrop').style.display='none'}
-
-// دعم قراءة الملفات الكبيرة والنصوص بمرونة تامة
-function handleFile(input){
-  const file = input.files[0];
-  if(!file) return;
-  const reader = new FileReader();
-  reader.onload = function(e){
-    document.getElementById('aiText').value = e.target.result;
-    toast('تم تحميل محتوى الملف بنجاح! ✨');
-  };
-  reader.onerror = function(){toast('تعذر قراءة الملف');};
-  reader.readAsText(file, 'UTF-8');
+function rankRow(x,i,key,arr){
+const r=1+arr.filter(y=>y[key]>x[key]).length,top=x[key]>0,medal=top?({1:'🏆',2:'🥈',3:'🥉'}[r]||r):r;
+return `<div class="rank-row"><div class="rank-no" style="${r===1&&top?'background:#493a20;color:#ffd67e;font-size:15px':''}">${medal}</div><div class="avatar ${i%2?'pink':''}" style="width:31px;height:31px">${avHtml(x)}</div><div class="rank-name">${escapeHtml(x.name)} ${x.pid===P()?'<span class="tag">أنتِ</span>':''}</div><div class="rank-points">${x[key]} ${key==='xp'?'XP':'PTS'}</div></div>`}
+function renderTasks(){let search=(document.getElementById('taskSearch')?.value||'').toLowerCase(),filter=document.getElementById('taskFilter')?.value||'all';let tasks=state.tasks.filter(t=>t.owner===P()&&t.title.toLowerCase().includes(search)&&(filter==='all'||(filter==='done'?t.done:!t.done)));document.getElementById('taskGrid').innerHTML=tasks.map(t=>`<div class="task-card ${t.done?'completed':''}"><div style="display:flex;justify-content:space-between;gap:8px"><span class="tag">${escapeHtml(t.subject)}</span><span class="tag ${t.difficulty==='صعبة'?'gold':'cyan'}">${escapeHtml(t.difficulty)}</span></div><h3>${escapeHtml(t.title)}</h3><p>${escapeHtml(t.desc||'مهمة دراسية')}</p><div class="task-bottom"><span class="xp">+${t.xp} XP · +${t.coins} ◉</span><div style="display:flex;gap:6px"><button class="btn ${t.done?'ghost':''}" onclick="toggleTask(${t.id})">${t.done?'إلغاء الإكمال':'إنجاز ✓'}</button><button class="btn ghost" title="حذف" onclick="deleteTask(${t.id})">×</button></div></div></div>`).join('')||'<div class="empty">ما أضفتوا مهام للحين — اختاروا وش بتذاكرون واضغطوا «مهمة جديدة».</div>'}
+function toggleTask(id){if(!player().activated){toast('فعّلي الحساب بالاسم أولًا');return}let t=state.tasks.find(x=>x.id===id);if(!t||t.owner!==P())return;let p=player();t.done=!t.done;if(t.done){t.completedAt=Date.now();p.xp+=t.xp;p.coins+=t.coins;p.weekly+=Math.max(5,Math.round(t.xp/2));p.done++;addFeed(`${p.name} أنجزت: ${t.title} (+${t.xp} XP)`);checkSecretBadges(p);toast(`مهمة مكتملة! +${t.xp} XP و +${t.coins} عملات`)}else{delete t.completedAt;p.xp=Math.max(0,p.xp-t.xp);p.coins=Math.max(0,p.coins-t.coins);p.weekly=Math.max(0,p.weekly-Math.max(5,Math.round(t.xp/2)));p.done=Math.max(0,p.done-1);addFeed(`${p.name} أعادت فتح المهمة: ${t.title}`);toast('تم إلغاء الإنجاز وخصم المكافأة السابقة')}render()}
+function deleteTask(id){let t=state.tasks.find(x=>x.id===id);if(!t||t.owner!==P())return;if(t.done){toast('أعيدي فتح المهمة قبل حذفها');return}state.tasks=state.tasks.filter(x=>x.id!==id);addFeed('تم حذف مهمة غير مكتملة');render()}
+function openModal(type){let modal=document.getElementById('modal'),back=document.getElementById('modalBackdrop');back.style.display='grid';if(type==='task'){modal.innerHTML=`<h2>＋ مهمة جديدة</h2><div class="muted small">حددي مهمة قابلة للإنجاز والقياس.</div><label>اسم المهمة</label><input class="field" id="mTitle" placeholder="مثال: حل أسئلة لاب جافا"><label>المادة</label><select class="field" id="mSubject"><option>رياضيات</option><option>فيزياء</option><option>برمجة</option><option>إنجليزي</option><option>مشروع جامعي</option><option>شخصي</option></select><label>الصعوبة</label><select class="field" id="mDifficulty"><option value="سهلة">سهلة · 5 XP</option><option value="متوسطة" selected>متوسطة · 15 XP</option><option value="صعبة">صعبة · 30 XP</option><option value="مهمة كبرى">مهمة كبرى · 50 XP</option></select><label>وصف مختصر (اختياري)</label><input class="field" id="mDesc" placeholder="وش يعني أن المهمة انتهت؟"><div class="modal-actions"><button class="btn" onclick="createTask()">إضافة المهمة</button><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`}else if(type==='bet'){modal.innerHTML=`<h2>⚠ إنشاء رهان</h2><div class="muted small">الرهان يخص نقاط المنافسة الأسبوعية فقط.</div><label>هدف واضح</label><input class="field" id="betGoal" placeholder="مثال: إنهاء لابين قبل الجمعة"><label>قيمة الرهان</label><select class="field" id="betAmount"><option value="5">5 نقاط</option><option value="10">10 نقاط</option><option value="15">15 نقطة</option></select><div class="challenge" style="margin-top:15px"><p>عند تأكيد الإنجاز: استرداد الرهان + مكافأة مساوية له. عند عدم الإنجاز: يخصم الرهان. هذه النسخة تسجل الرهان محليًا ولا تراقب الهدف تلقائيًا.</p></div><div class="modal-actions"><button class="btn danger" onclick="createBet()">تأكيد الرهان</button><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`}else if(type==='name'){modal.innerHTML=`<h2>تعديل اسم اللاعب</h2><label>الاسم داخل الأكاديمية</label><input class="field" id="newName" maxlength="24" value="${escapeHtml(player().name)}"><div class="modal-actions"><button class="btn" onclick="saveName()">حفظ</button><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`}
+else if(type==='activateFriend'){modal.innerHTML=`<h2>تفعيل حساب الصديقة</h2><p class="muted small" style="line-height:1.9">خلي صديقتك هي تكتب اسمها هنا بنفسها. قبل التفعيل ما تقدر تضيف مهام أو تكسب نقاط في حسابها.</p><label>اسم صديقتك</label><input class="field" id="friendName" maxlength="24" placeholder="تكتب اسمها بنفسها"><div class="modal-actions"><button class="btn" onclick="activateFriend()">تفعيل الحساب</button><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`;setTimeout(()=>document.getElementById('friendName')?.focus(),50)}}
+function closeModal(){if(mustPick)return;document.getElementById('modalBackdrop').style.display='none'}
+function createTask(){if(!player().activated){toast('فعّلي الحساب بالاسم أولًا');return}let title=document.getElementById('mTitle').value.trim();if(!title){toast('اكتبي اسم المهمة أولًا');return}let difficulty=document.getElementById('mDifficulty').value,xp={'سهلة':5,'متوسطة':15,'صعبة':30,'مهمة كبرى':50}[difficulty],coins={'سهلة':2,'متوسطة':5,'صعبة':10,'مهمة كبرى':15}[difficulty];state.tasks.unshift({id:newId(),title,subject:document.getElementById('mSubject').value,difficulty,xp,coins,done:false,owner:P(),desc:document.getElementById('mDesc').value.trim()});addFeed(`${player().name} أضافت مهمة: ${title}`);closeModal();render();toast('تمت إضافة المهمة')}
+function createBet(){let goal=document.getElementById('betGoal').value.trim(),amount=Number(document.getElementById('betAmount').value),p=player();if(!goal){toast('حددي هدف الرهان');return}if(p.weekly<amount){toast('نقاطك الأسبوعية ما تكفي لهذا الرهان');return}p.weekly-=amount;addFeed(`${p.name} راهنت بـ ${amount} نقطة: ${goal}`);closeModal();render();toast('تم تسجيل الرهان. تذكري متابعة النتيجة يدويًا.')}
+function saveName(){let n=document.getElementById('newName').value.trim();if(!n){toast('الاسم ما يصير فاضي');return}player().name=n;closeModal();render();toast('تم تحديث الاسم')}
+function activateFriend(){
+  const n=document.getElementById('friendName').value.trim();
+  if(!n){toast('صديقتك تكتب اسمها أول');return}
+  const friend=state.players[1];friend.name=n;friend.activated=true;
+  state.active=1;addFeed(`انضمّت ${n} إلى الأكاديمية`);closeModal();save();render();
+  toast('تم تفعيل حساب صديقتك');
 }
-
-function openFriendBox(){
-  const surprises=[
-    "سؤال الصداقة: وش أكثر مادة تحسّينها متعبة هالأسبوع لصديقتك؟ ناقشوها سوا!",
-    "تحدي التعاون: أنجزا معاً مهمتين دراسيتين قبل نهاية اليوم لتربحان 20 عملة إضافية!",
-    "رسالة دعم: أرسلي رسالة صوتية أو نصية سريعة لصديقتك عبر الشات تشجعينها فيها!",
-    "استراحة قهوة: توقفا عن المذاكرة لمدة 10 دقائق وخذوا بريك خفيف ☕"
-  ];
-  const pick=surprises[Math.floor(Math.random()*surprises.length)];
-  const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
-  modal.innerHTML=`<h2>🎁 صندوق الترابط الصديق</h2><p class="muted" style="line-height:2;margin:15px 0">${pick}</p><div class="modal-actions"><button class="btn" onclick="closeModal();nav('chat')">الانتقال للشات ومناقشتها 💬</button><button class="btn ghost" onclick="closeModal()">إغلاق</button></div>`;
+function renderShop(){let p=player();document.getElementById('shopGrid').innerHTML=`<div class="card" style="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px"><div><div class="muted small">رصيدك الحالي</div><div class="big-score">${p.coins} ◉</div></div><div class="muted small">اجمعي العملات بإنجاز المهام</div></div>`+items.map(it=>{let own=p.owned.includes(it.id);return `<div class="shop-item"><div class="shop-emoji">${it.emoji}</div><h3 style="font-size:14px">${it.name}</h3><div class="muted small" style="margin:8px 0 13px">${it.cost} عملة</div><button class="btn ${own?'ghost':''}" ${own?'disabled':''} onclick="buyItem('${it.id}')">${own?'تم الشراء':p.coins>=it.cost?'شراء العنصر':'عملات غير كافية'}</button></div>`}).join('')}
+function buyItem(id){let it=items.find(x=>x.id===id),p=player();if(p.owned.includes(id)){toast('تملكين هذا العنصر بالفعل');return}if(p.coins<it.cost){toast('تحتاجين عملات أكثر');return}p.coins-=it.cost;p.owned.push(id);addFeed(`${p.name} اشترت ${it.name}`);render();toast('تم فتح '+it.name+' ✦')}
+function renderWorld(){let p=player();document.getElementById('ownedItems').innerHTML=p.owned.length?p.owned.map(id=>{let it=items.find(x=>x.id===id);return `<span class="tag">${it.emoji} ${it.name}</span>`}).join(''):'<span class="muted small">ما عندك عناصر بعد — أنجزي المهام وافتحي أول عنصر!</span>';document.getElementById('roomTitle').textContent='غرفة '+p.name}
+function renderProfile(){let p=player(),lv=level(p.xp),mine=state.tasks.filter(t=>t.owner===P()),done=mine.filter(t=>t.done).length;document.getElementById('profileAvatar').innerHTML=avHtml(p);document.getElementById('profileName').textContent=p.name;document.getElementById('profileRank').textContent=lv.name+' · Level '+(lv.index+1);let pct=lv.next?Math.min(100,(p.xp-lv.base)/(lv.next-lv.base)*100):100;document.getElementById('profileBar').style.width=pct+'%';document.getElementById('profileXPText').textContent=lv.next?`${p.xp} XP · ${lv.next-p.xp} XP للمستوى التالي`:`${p.xp} XP · أعلى رتبة`;document.getElementById('profileStats').innerHTML=[['المهام المكتملة',done],['نقاط الخبرة',p.xp+' XP'],['عملات المتجر',p.coins],['نقاط الأسبوع',p.weekly],['العناصر المفتوحة',p.owned.length],['سلسلة الالتزام',p.streak+' أيام']].map(([a,b])=>`<div class="rank-row"><div class="rank-name muted">${a}</div><div style="font-weight:800">${b}</div></div>`).join('')}
+/* ===== قاعة المذاكرة، الدردشة، والأوسمة المخفية ===== */
+const SECRET_BADGES=[
+ {id:'night',name:'سهرانة الليل',emoji:'🌙',desc:'إنجاز مهمة بعد منتصف الليل وقبل الخامسة صباحًا.'},
+ {id:'iron90',name:'التركيز الحديدي',emoji:'🛡️',desc:'إكمال جلسة تركيز 90 دقيقة بدون إيقاف أو انقطاع.'},
+ {id:'fiveTasks',name:'الانشقاق',emoji:'⚔️',desc:'إنجاز 5 مهام في يوم واحد.'},
+ {id:'firstTask',name:'أول الغيث',emoji:'🌱',desc:'إنجاز أول مهمة لك.'},
+ {id:'tenTasks',name:'آلة الإنجاز',emoji:'🏹',desc:'إنجاز 10 مهام بالمجموع.'},
+ {id:'earlyBird',name:'بنت الفجر',emoji:'🌅',desc:'إنجاز مهمة بين الخامسة والسابعة صباحًا.'},
+ {id:'threeFocus',name:'تركيز ثلاثي',emoji:'🎯',desc:'إكمال 3 جلسات تركيز في يوم واحد.'},
+ {id:'sevenStreak',name:'سلسلة أسطورية',emoji:'🔥',desc:'الوصول إلى 7 أيام متتالية.'},
+ {id:'longDay',name:'نفس طويل',emoji:'⏳',desc:'تجميع 180 دقيقة تركيز في يوم واحد.'},
+ {id:'nightThree',name:'حارسة الليل',emoji:'🦉',desc:'إنجاز 3 مهام مختلفة بعد منتصف الليل.'},
+ {id:'chatFirst',name:'رفيقة دراسة',emoji:'💌',desc:'إرسال أول رسالة في دردشة المذاكرة.'},
+ {id:'comeback',name:'عودة قوية',emoji:'✨',desc:'العودة لجلسة تركيز بعد غياب 3 أيام أو أكثر.'}
+];
+let lastNotifiedFocusId=null,lastRenderedChatCount=-1,completingRoomId=null;
+function localDay(ts){return dayKey(new Date(ts))}
+function unlockBadge(p,id){p.badges=p.badges||[];if(p.badges.includes(id))return false;p.badges.push(id);const b=SECRET_BADGES.find(x=>x.id===id);if(b){toast(`وسام جديد: ${b.emoji} ${b.name}`);addFeed(`${p.name} فتحت وسام ${b.name}`)}return true}
+function checkSecretBadges(p,sessionMinutes=0,uninterrupted=false){
+ const mine=state.tasks.filter(t=>t.owner===p.pid&&t.done),now=Date.now(),today=localDay(now),todays=mine.filter(t=>t.completedAt&&localDay(t.completedAt)===today),hour=new Date(now).getHours();
+ if(todays.some(t=>{let h=new Date(t.completedAt).getHours();return h>=0&&h<5}))unlockBadge(p,'night');
+ if(todays.some(t=>{let h=new Date(t.completedAt).getHours();return h>=5&&h<7}))unlockBadge(p,'earlyBird');
+ if(todays.length>=5)unlockBadge(p,'fiveTasks');if(mine.length>=1)unlockBadge(p,'firstTask');if(mine.length>=10)unlockBadge(p,'tenTasks');
+ if(todays.filter(t=>{let h=new Date(t.completedAt).getHours();return h>=0&&h<5}).length>=3)unlockBadge(p,'nightThree');
+ const sessions=(p.focusSessions||[]).filter(t=>localDay(t)===today);if(sessions.length>=3)unlockBadge(p,'threeFocus');
+ if((p.dayKey===today?(p.dayMin||0):0)>=180)unlockBadge(p,'longDay');if((p.streak||0)>=7)unlockBadge(p,'sevenStreak');if(sessionMinutes>=90&&uninterrupted)unlockBadge(p,'iron90');
 }
-
-function renderChat(){
-  const box=document.getElementById('chatMessages');if(!box)return;
-  const msgs=state.chat||[];
-  box.innerHTML=msgs.map(m=>`<div style="display:flex;flex-direction:column;align-items:${m.pid===P()?'flex-end':'flex-start'}"><div style="font-size:10px;color:var(--muted);margin-bottom:2px">${escapeHtml(m.name)}</div><div style="background:${m.pid===P()?'#2a224a':'#171c2b'};padding:10px 14px;border-radius:12px;max-width:80%;font-size:13px">${escapeHtml(m.text)}</div></div>`).join('')||'<div class="empty">لا توجد رسائل بعد. ابدئي المحادثة!</div>';
-  box.scrollTop=box.scrollHeight;
+function renderSecretBadges(){const p=player();if(!p||!p.pid)return;checkSecretBadges(p);const opened=p.badges||[];const el=document.getElementById('secretBadges');if(!el)return;document.getElementById('badgeCount').textContent=`${opened.length} / ${SECRET_BADGES.length} مفتوح`;el.innerHTML=SECRET_BADGES.map(b=>{const yes=opened.includes(b.id);return `<div class="badge-tile ${yes?'':'locked'}"><div class="badge-emoji">${yes?b.emoji:'🔒'}</div><div class="badge-title">${yes?b.name:'وسام مخفي'}</div><div class="badge-desc">${yes?b.desc:'كمّلي إنجازاتك واكتشفي شرطه.'}</div></div>`}).join('')}
+function roomNames(room){return (room?.participants||[]).map(id=>state.players.find(p=>p.pid===id)?.name||'مستخدمة').join('، ')}
+function renderSocialFeatures(){
+ const room=state.focusRoom,el=document.getElementById('sharedRoom');if(!el)return;const active=room&&room.status==='active'&&room.endAt>Date.now();
+ if(room&&room.status==='active'&&room.endAt<=Date.now())completeSharedRoom(room.id);
+ if(!room)el.innerHTML='<div class="room-alert"><b>القاعة فاضية حاليًا</b><div class="small muted" style="margin-top:5px">كوني أول وحدة تبدأ الجلسة، وصديقتك تقدر تنضم من نفس الصفحة.</div></div>';
+ else if(active){const joined=(room.participants||[]).includes(P());el.innerHTML=`<div class="room-alert"><div style="display:flex;justify-content:space-between;gap:10px;align-items:center"><b><span class="live-dot"></span> ${escapeHtml(room.hostName||'إحدى الصديقات')} دخلت قاعة المذاكرة</b><span class="tag cyan">${room.duration} دقيقة</span></div><div class="big-score" id="sharedCountdown" style="font-size:32px;margin:12px 0;direction:ltr;text-align:right">${fmt(Math.max(0,Math.ceil((room.endAt-Date.now())/1000)))}</div><div class="small muted">المشاركات: ${escapeHtml(roomNames(room))||'بانتظار الانضمام'}</div>${joined?'<div class="good small" style="margin-top:9px">أنتِ داخل الجلسة المشتركة ✦</div>':`<button class="btn" style="margin-top:12px" onclick="joinSharedFocus('${room.id}')">انضمي لنفس العدّاد</button>`}</div>`;
+  if(room.host!==P()&&room.id!==lastNotifiedFocusId){lastNotifiedFocusId=room.id;if(document.hidden&&'Notification'in window&&Notification.permission==='granted'){try{new Notification('Focus — قاعة المذاكرة',{body:`${room.hostName||'صديقتك'} بدأت جلسة ${room.duration} دقيقة. انضمي لها!`})}catch(e){}}else if(!document.hidden)toast(`${room.hostName||'صديقتك'} دخلت قاعة المذاكرة 📚`)}
+ }else{el.innerHTML=`<div class="room-alert"><b>🎉 انتهت جلسة المذاكرة المشتركة</b><p style="line-height:1.9;margin:8px 0">${escapeHtml(room.message||'أحسنتوا! خطوة جديدة باتجاه أهدافكم، خذوا نفس وافتخروا بإنجازكم 💜')}</p><div class="small muted">${room.duration||0} دقيقة · المشاركات: ${escapeHtml(roomNames(room))}</div></div>`}
+ const start=document.getElementById('startSharedBtn');if(start)start.disabled=!!active;
+ const log=document.getElementById('chatLog');if(log){const msgs=(state.chat||[]).slice(-60);log.innerHTML=msgs.map(m=>`<div class="chat-msg ${m.sender===P()?'mine':''}"><b style="font-size:11px">${escapeHtml(m.name||'مستخدمة')}</b><div style="margin-top:5px;font-size:13px;line-height:1.7">${escapeHtml(m.text)}</div><div class="chat-meta">${new Date(m.ts).toLocaleTimeString('ar-SA',{hour:'2-digit',minute:'2-digit'})}</div></div>`).join('')||'<div class="empty" style="padding:35px 8px">ابدؤوا أول محادثة تشجيع 💜</div>';if(msgs.length!==lastRenderedChatCount){log.scrollTop=log.scrollHeight;lastRenderedChatCount=msgs.length}}
 }
-function sendChatMessage(){
-  const inp=document.getElementById('chatInput');if(!inp)return;
-  const txt=inp.value.trim();if(!txt)return;
-  state.chat=state.chat||[];
-  state.chat.push({pid:P(),name:player().name,text:txt,ts:Date.now()});
-  inp.value='';render();
-}
-
-// توليد الكويز بالذكاء الاصطناعي مع دعم النصوص الكبيرة بدون طلب مفتاح
-async function generateQuiz(){
-  const text=document.getElementById('aiText').value.trim();
-  const focus=document.getElementById('aiFocus').value.trim();
-  const count=document.getElementById('aiCount').value;
-  const type=document.getElementById('aiType').value;
-
-  if(!text){toast('الرجاء كتابة أو لصق محتوى الدرس أولاً');return}
-  
-  toast('جاري توليد الأسئلة بواسطة الذكاء الاصطناعي...');
-  try {
-    const promptText = `بناءً على النص التالي، قم بتوليد ${count} أسئلة من نوع "${type}" باللغة العربية.${focus ? ' توجيه خاص: ' + focus : ''} ضع كل سؤال بوضوح مع خياراته والإجابة الصحيحة:\n\n${text}`;
-    
-    const res=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({contents:[{parts:[{text:promptText}]}]})
-    });
-    const data=await res.json();
-    if(data.error){
-      toast('خطأ من الخادم: ' + data.error.message);
-      return;
-    }
-    const reply=data.candidates[0].content.parts[0].text;
-    document.getElementById('quizContainer').style.display='block';
-    document.getElementById('quizContent').innerHTML=`<p style="white-space: pre-wrap;">${escapeHtml(reply)}</p>`;
-    toast('تم توليد الكويز بنجاح! ✨');
-  } catch(e){
-    console.error(e);
-    toast('حدث خطأ أثناء الاتصال بالذكاء الاصطناعي');
-  }
-}
-
-// الستريك والمتابعة اليومية
+async function startSharedFocus(){if(!player().pid){toast('سجلي دخولك أول');return}if(!cloudOn||!window.cloud){toast('لازم يكون الموقع متصل عشان تتشارك الجلسة');return}if(state.focusRoom?.status==='active'&&state.focusRoom.endAt>Date.now()){toast('فيه جلسة شغالة بالفعل');return}const duration=FS.dur||25,room={id:'room'+Date.now().toString(36),host:P(),hostName:player().name,duration,startedAt:Date.now(),endAt:Date.now()+duration*60000,participants:[P()],status:'active',message:''};try{await window.cloud.transact(remote=>({...((remote&&typeof remote==='object')?remote:stripFull(state)),focusRoom:room,chat:Array.isArray(remote?.chat)?remote.chat:[]}));state.focusRoom=room;renderSocialFeatures();toast('دخلتِ قاعة المذاكرة! أرسلنا التنبيه لصديقتك 🔔')}catch(e){toast('ما قدرنا نبدأ القاعة؛ تأكدي من الاتصال')}}
+async function joinSharedFocus(id){const room=state.focusRoom;if(!room||room.id!==id||room.status!=='active'||room.endAt<=Date.now()){toast('الجلسة انتهت، ابدؤوا جلسة جديدة');return}if(!cloudOn||!window.cloud){toast('لازم اتصال بالإنترنت للانضمام');return}try{await window.cloud.transact(remote=>{const r=remote?.focusRoom;if(!r||r.id!==id||r.status!=='active')return remote;return {...remote,focusRoom:{...r,participants:[...new Set([...(r.participants||[]),P()])]}}});toast('انضمّيتي لنفس العدّاد! بالتوفيق لكم 💜')}catch(e){toast('تعذر الانضمام، جربي مرة ثانية')}}
+async function completeSharedRoom(id){if(completingRoomId===id)return;completingRoomId=id;const message='خلصتوا الجلسة! 💜 كل دقيقة التزمتوا فيها تقرّبكم من هدفكم. خذوا استراحة قصيرة وافتخروا بنفسكم.';try{if(cloudOn&&window.cloud){await window.cloud.transact(remote=>{const r=remote?.focusRoom;if(!r||r.id!==id||r.status!=='active')return remote;return {...remote,focusRoom:{...r,status:'completed',finishedAt:Date.now(),message}}});}else if(state.focusRoom?.id===id){state.focusRoom.status='completed';state.focusRoom.message=message;save()} }catch(e){}finally{completingRoomId=null}}
+async function enableStudyNotifications(){if(!('Notification'in window)){toast('متصفحك ما يدعم إشعارات المتصفح');return}try{const permission=await Notification.requestPermission();document.getElementById('notifyHelp').textContent=permission==='granted'?'تم السماح بالإشعارات. إذا كان الموقع مفتوحًا بالخلفية قد يظهر تنبيه عند بدء صديقتك.':'الإشعارات غير مفعّلة؛ تقدرين تغيّرين الإذن من إعدادات المتصفح.';toast(permission==='granted'?'تم تفعيل إذن الإشعارات':'ما تم السماح بالإشعارات')}catch(e){toast('تعذر طلب إذن الإشعارات')}}
+async function sendChatMessage(){const input=document.getElementById('chatInput'),textMsg=input.value.trim();if(!textMsg)return;if(!player().pid){toast('سجلي دخولك أول');return}if(!cloudOn||!window.cloud){toast('الدردشة تحتاج اتصالًا بالإنترنت');return}const msg={id:'m'+Date.now().toString(36)+Math.random().toString(36).slice(2,5),sender:P(),name:player().name,text:textMsg.slice(0,500),ts:Date.now()};input.value='';try{await window.cloud.transact(remote=>{const base=(remote&&typeof remote==='object')?remote:stripFull(state);const chat=Array.isArray(base.chat)?base.chat:[];return {...base,chat:[...chat,msg].slice(-150)}});if(!player().badges?.includes('chatFirst'))unlockBadge(player(),'chatFirst');render()}catch(e){input.value=textMsg;toast('ما انرسلت الرسالة؛ تأكدي من الاتصال')}}
+document.getElementById('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();sendChatMessage()}});
+setInterval(()=>{const room=state.focusRoom;if(room&&room.status==='active'){const countdown=document.getElementById('sharedCountdown');if(countdown)countdown.textContent=fmt(Math.max(0,Math.ceil((room.endAt-Date.now())/1000)));if(room.endAt<=Date.now())completeSharedRoom(room.id)}},1000);
+let quizQuestions=[],quizSubmitted=false,quizFile=null;
+const quizFileInput=document.getElementById('quizFile');
+quizFileInput.addEventListener('change',()=>{quizFile=quizFileInput.files?.[0]||null;document.getElementById('quizFileInfo').textContent=quizFile?`${quizFile.name} · ${(quizFile.size/1024/1024).toFixed(2)} MB`:'ما اخترتي ملف للحين.';});
+const quizDrop=document.getElementById('quizDrop');
+quizDrop.addEventListener('dragover',e=>{e.preventDefault();quizDrop.classList.add('dragover')});quizDrop.addEventListener('dragleave',()=>quizDrop.classList.remove('dragover'));quizDrop.addEventListener('drop',e=>{e.preventDefault();quizDrop.classList.remove('dragover');const f=e.dataTransfer.files?.[0];if(f){const dt=new DataTransfer();dt.items.add(f);quizFileInput.files=dt.files;quizFile=f;document.getElementById('quizFileInfo').textContent=`${f.name} · ${(f.size/1024/1024).toFixed(2)} MB`;}});
+function quizStatus(t){document.getElementById('quizStatus').textContent=t}
+function fileToBase64(file){return new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(String(r.result).split(',')[1]);r.onerror=reject;r.readAsDataURL(file)})}
+async function readQuizFile(file){const name=file.name.toLowerCase();if(name.endsWith('.txt')||name.endsWith('.md'))return {text:await file.text()};if(name.endsWith('.pdf'))return {inlineData:{mime_type:'application/pdf',data:await fileToBase64(file)}};if(name.endsWith('.docx')){if(!window.mammoth){await new Promise((resolve,reject)=>{const sc=document.createElement('script');sc.src='https://unpkg.com/mammoth@1.8.0/mammoth.browser.min.js';sc.onload=resolve;sc.onerror=()=>reject(new Error('تعذر تحميل قارئ ملفات Word. جربي PDF أو TXT.'));document.head.appendChild(sc)})}const ab=await file.arrayBuffer();const out=await window.mammoth.extractRawText({arrayBuffer:ab});return {text:out.value}}throw new Error('نوع الملف غير مدعوم. ارفعي PDF أو DOCX أو TXT أو MD.')}
+async function createAiQuiz(){const btn=document.getElementById('makeQuizBtn'),key=document.getElementById('quizApiKey').value.trim(),topic=document.getElementById('quizTopic').value.trim(),count=Number(document.getElementById('quizCount').value),type=document.getElementById('quizType').value;if(!key){quizStatus('أضيفي مفتاح Gemini API أولًا.');return}if(!quizFile&&!topic){quizStatus('ارفعي ملفًا أو اكتبي موضوع الكويز.');return}if(quizFile&&quizFile.size>10*1024*1024){quizStatus('الملف أكبر من 10MB؛ اختاري نسخة أصغر.');return}btn.disabled=true;btn.textContent='جاري تجهيز الأسئلة…';quizStatus('أقرأ المحتوى وأبني أسئلة من نقاط مختلفة، ممكن ياخذ شوي.');document.getElementById('quizResultCard').style.display='none';try{let parts=[];if(quizFile){const fileData=await readQuizFile(quizFile);if(fileData.inlineData)parts.push({inline_data:fileData.inlineData});else parts.push({text:'محتوى الملف المرفق:\n'+fileData.text.slice(0,90000)})}const kind=type==='mcq'?'كل الأسئلة اختيار من متعدد بأربع خيارات':type==='truefalse'?'كل الأسئلة صح أو خطأ، وخياران فقط: صح أو خطأ':'نوّعي بين الاختيار من متعدد والصح أو الخطأ، واجعلي كل سؤال قابلًا للتصحيح الآلي بخيارات واضحة';const sourceRule=quizFile?'اعتمدي على المحتوى المرفق فقط ولا تضيفي معلومات من خارجه.':'أنشئي الأسئلة عن الموضوع الذي يكتبه المستخدم اعتمادًا على المعرفة الدراسية العامة.';const prompt=`أنتِ مساعدة مذاكرة. أنشئي كويزًا باللغة العربية. ${sourceRule} المطلوب ${count} أسئلة. نوع الأسئلة: ${kind}. ${topic?'تركيز إضافي من المستخدم: '+topic+'.':''} غطّي أهم الأفكار المتنوعة من كامل المحتوى قدر الإمكان، لا تكرري السؤال نفسه، ولا تختلقي حقائق غير موجودة في المصدر. إذا كان المحتوى لا يكفي لهذا العدد، أنشئي عددًا أقل بدل اختراع معلومات. أعيدي JSON صالحًا فقط بالشكل التالي: {"questions":[{"question":"نص السؤال","options":["الخيار أ","الخيار ب","الخيار ج","الخيار د"],"answer":0,"explanation":"شرح قصير مستند إلى الملف"}]}. answer هو رقم الخيار الصحيح ويبدأ من صفر. حتى في الصح والخطأ اجعلي options تحتوي خيارين فقط. لا تضعي Markdown أو أي نص خارج JSON.`;parts.push({text:prompt});const response=await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key='+encodeURIComponent(key),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts}],generationConfig:{temperature:0.3,responseMimeType:'application/json'}})});const data=await response.json();if(!response.ok)throw new Error(data?.error?.message||'تعذر الاتصال بخدمة الذكاء الاصطناعي. تأكدي من المفتاح.');const raw=data?.candidates?.[0]?.content?.parts?.map(x=>x.text||'').join('')||'';let parsed;try{parsed=JSON.parse(raw.replace(/^```(?:json)?\s*/i,'').replace(/\s*```$/,''))}catch{throw new Error('وصل رد غير واضح من الذكاء الاصطناعي. اضغطي إنشاء الكويز مرة ثانية.')}quizQuestions=(parsed.questions||[]).filter(q=>q&&typeof q.question==='string'&&Array.isArray(q.options)&&q.options.length>=2&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length).slice(0,count);if(!quizQuestions.length)throw new Error('ما قدرت أستخرج أسئلة صالحة من الملف. جربي ملفًا أوضح.');quizSubmitted=false;renderAiQuiz();quizStatus(`جهزت ${quizQuestions.length} سؤال من المحتوى. بالتوفيق!`);document.getElementById('quizResultCard').style.display='block';document.getElementById('quizResultCard').scrollIntoView({behavior:'smooth',block:'start'})}catch(e){quizStatus(e.message||'صار خطأ غير متوقع. جربي مرة ثانية.')}finally{btn.disabled=false;btn.textContent='✨ أنشئي الكويز'}}
+function renderAiQuiz(){const host=document.getElementById('quizResult');host.innerHTML=`<div class="section-head"><div><div class="eyebrow">YOUR QUIZ IS READY</div><h2 style="margin:7px 0">اختبري نفسك</h2><div class="small muted">${quizQuestions.length} سؤال · لا تظهر الإجابات إلا بعد التصحيح</div></div><button class="btn ghost" onclick="resetAiQuiz()">إعادة الكويز ↻</button></div><form id="aiQuizForm">${quizQuestions.map((q,i)=>`<div class="quiz-q" id="quizQ${i}"><h3>${i+1}. ${escapeHtml(q.question)}</h3>${q.options.map((op,j)=>`<label class="quiz-option" id="quizOpt${i}_${j}"><input type="radio" name="q${i}" value="${j}"><span>${escapeHtml(op)}</span></label>`).join('')}<div class="quiz-explanation" id="quizExplain${i}" style="display:none"></div></div>`).join('')}<button class="btn" type="submit" id="gradeQuizBtn">صححي إجاباتي ✓</button></form><div id="quizScore" style="margin-top:15px"></div>`;document.getElementById('aiQuizForm').addEventListener('submit',e=>{e.preventDefault();gradeAiQuiz()})}
+function gradeAiQuiz(){if(quizSubmitted)return;let score=0,answered=0;quizQuestions.forEach((q,i)=>{const picked=document.querySelector(`input[name="q${i}"]:checked`);if(picked)answered++;const selected=picked?Number(picked.value):-1,correct=selected===q.answer;if(correct)score++;q.options.forEach((_,j)=>{const el=document.getElementById(`quizOpt${i}_${j}`);if(j===q.answer)el.classList.add('quiz-correct');else if(j===selected)el.classList.add('quiz-wrong')});const exp=document.getElementById(`quizExplain${i}`);exp.style.display='block';exp.innerHTML=`<b>${selected===q.answer?'إجابة صحيحة ✓':'الإجابة الصحيحة: '+escapeHtml(q.options[q.answer])}</b><br>${escapeHtml(q.explanation||'')}`});quizSubmitted=true;document.getElementById('quizScore').innerHTML=`<div class="challenge"><div class="eyebrow">YOUR RESULT</div><div class="big-score">${score} / ${quizQuestions.length}</div><p>جاوبتي ${answered} من ${quizQuestions.length} سؤال. ${score===quizQuestions.length?'كفو! كل إجاباتك صحيحة.':score/quizQuestions.length>=.7?'ممتاز، راجعي الأسئلة اللي غلطتي فيها.':'راجعي الشرح ثم أعيدي الكويز عشان تثبت المعلومات.'}</p></div>`;document.getElementById('gradeQuizBtn').disabled=true}
+function resetAiQuiz(){quizSubmitted=false;renderAiQuiz();document.getElementById('quizScore').innerHTML=''}
+document.getElementById('makeQuizBtn').addEventListener('click',createAiQuiz);
+document.querySelectorAll('.nav button[data-page]').forEach(b=>b.addEventListener('click',()=>nav(b.dataset.page)));document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>nav(b.dataset.goto)));document.getElementById('switchBtn').addEventListener('click',switchPlayer);document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('sidebar').classList.toggle('open'));document.getElementById('addTaskBtn').addEventListener('click',()=>openModal('task'));document.getElementById('addTaskBtn2').addEventListener('click',()=>openModal('task'));document.getElementById('betBtn').addEventListener('click',()=>openModal('bet'));document.getElementById('editName').addEventListener('click',()=>openModal('name'));document.getElementById('taskSearch').addEventListener('input',renderTasks);document.getElementById('taskFilter').addEventListener('change',renderTasks);document.getElementById('modalBackdrop').addEventListener('click',e=>{if(e.target.id==='modalBackdrop')closeModal()});
+document.getElementById('duelBtn').addEventListener('click',()=>{let p=player();p.weekly+=10;p.xp+=5;p.coins+=2;addFeed(`${p.name} قبلت مواجهة التركيز`);render();toast('قبلتِ المواجهة! +5 XP و +10 نقاط أسبوعية')});
+document.getElementById('resetWeek').addEventListener('click',()=>{if(confirm('تأكيد إعادة ضبط نقاط المنافسة الأسبوعية للحسابين؟')){state.players.forEach(p=>{p.weekly=0;p.weekMin=0});forceAll=true;addFeed('بدأ أسبوع تنافسي جديد');render();toast('بدأ أسبوع جديد')}})
+document.getElementById('exportData').addEventListener('click',()=>{let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='dark-academy-backup.json';a.click();URL.revokeObjectURL(url);toast('تم تجهيز نسخة البيانات')});
+document.getElementById('importData').addEventListener('change',async e=>{let f=e.target.files[0];if(!f)return;try{let s=JSON.parse(await f.text());if(!s.players||!s.tasks)throw Error();state=s;if(ME!=null)state.active=ME;forceAll=true;render();toast('تم استيراد البيانات')}catch(err){toast('الملف غير صالح')}e.target.value=''});
+document.getElementById('resetData').addEventListener('click',()=>{if(confirm('سيتم حذف بيانات الحسابين للجميع والعودة للبداية. متأكدة؟')){state=initial();if(cloudOn){window.cloud.transact(()=>stripFull(state)).catch(()=>{});ME=null;try{localStorage.removeItem('da_me')}catch(e){}lastMineSig='';render();openIdentity()}else{render()}toast('تمت إعادة ضبط البيانات')}})
+/* ===== التحفيز: ستريك، هدف يومي، ساعات، تشجيع ===== */
 function dayKey(d=new Date()){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
 function fmtMin(m){m=m||0;return m>=60?Math.floor(m/60)+'س '+(m%60)+'د':m+'د'}
 function renderFocusCard(){
@@ -366,41 +381,131 @@ function renderFocusCard(){
   const p=player(),k=dayKey(),yk=dayKey(new Date(Date.now()-864e5)),GOAL=30,TEAM=1200;
   const dm=p.dayKey===k?(p.dayMin||0):0,st=(p.lastDay===k||p.lastDay===yk)?(p.streak||0):0;
   const tot=state.players.reduce((a,x)=>a+(x.weekMin||0),0);
-  el.innerHTML=`<div class="big-score">🔥 ${st} <span style="font-size:14px;color:var(--muted)">يوم متتالي</span></div><div class="small muted" style="margin:10px 0 4px">هدف اليوم: ${Math.min(dm,GOAL)} / ${GOAL} دقيقة${dm>=GOAL?' ✓':''}</div><div class="progress-line"><span style="width:${Math.min(100,dm/GOAL*100)}%"></span></div><div class="small muted" style="margin:16px 0 4px">هدفك الجماعي هالأسبوع: ${fmtMin(tot)} / ${TEAM/60} ساعة</div><div class="progress-line"><span style="width:${Math.min(100,tot/TEAM*100)}%"></span></div>`;
+  const top=state.players.slice().sort((a,b)=>(b.weekMin||0)-(a.weekMin||0)).slice(0,5);
+  const streakIcon=p.streakIcon||'🔥';
+  el.innerHTML=`<div class="big-score"><span>${streakIcon}</span> ${st} <span style="font-size:14px;color:var(--muted)">يوم متتالي</span></div><button class="btn ghost" style="padding:6px 10px;font-size:11px;margin-top:4px" onclick="openStreakPicker()">تغيير شكل الستريك</button><div class="small muted" style="margin:10px 0 4px">هدف اليوم: ${Math.min(dm,GOAL)} / ${GOAL} دقيقة${dm>=GOAL?' ✓':''}</div><div class="progress-line"><span style="width:${Math.min(100,dm/GOAL*100)}%"></span></div><div class="small muted" style="margin:16px 0 4px">هدفنا الجماعي هالأسبوع: ${fmtMin(tot)} / ${TEAM/60} ساعة</div><div class="progress-line"><span style="width:${Math.min(100,tot/TEAM*100)}%"></span></div><div class="small muted" style="margin:16px 0 6px">أكثر وحدة ذاكرت هالأسبوع</div>`+top.map((x,i)=>`<div class="rank-row"><div class="rank-no">${i===0&&x.weekMin>0?'🏆':i+1}</div><div class="avatar" style="width:31px;height:31px">${avHtml(x)}</div><div class="rank-name">${escapeHtml(x.name)}</div><div class="rank-points">${fmtMin(x.weekMin)}</div></div>`).join('');
 }
-
-// المؤقت وجلسة التركيز
-const FS={dur:25,run:false,paused:false,endAt:0,remainMs:25*60000,iv:null};
+function openStreakPicker(){
+  const icons=['🔥','⚡','⭐','💎','🌸','🌙','🦋','🐉','🌈','💜','☀️','🍀'];
+  const current=player().streakIcon||'🔥';
+  const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
+  modal.innerHTML=`<h2>اختاري شكل الستريك</h2><p class="muted small">يتغير الرمز عندك أنتِ فقط.</p><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px">${icons.map(e=>`<button class="btn ${e===current?'':'ghost'}" style="font-size:25px;padding:12px 4px" onclick="setStreakIcon('${e}')">${e}</button>`).join('')}</div><div class="modal-actions"><button class="btn ghost" onclick="closeModal()">إلغاء</button></div>`;
+}
+function setStreakIcon(icon){player().streakIcon=icon;closeModal();render();toast('تم تغيير شكل الستريك '+icon)}
+function reactBar(f){
+  if(!f.ts)return '';const me=player().reacts||{};
+  return '<span style="margin-inline-start:8px">'+['👏','🔥'].map(e=>{const n=state.players.filter(x=>x.reacts&&x.reacts[f.ts]===e).length;return `<button onclick="react(${Number(f.ts)},'${e}')" style="background:none;border:0;cursor:pointer;font-size:14px;color:inherit;opacity:${me[f.ts]===e?1:.55}">${e}${n||''}</button>`}).join('')+'</span>';
+}
+function react(ts,e){
+  const p=player();if(!p.pid)return;p.reacts=p.reacts||{};
+  if(p.reacts[ts]===e)delete p.reacts[ts];else p.reacts[ts]=e;
+  const keep=new Set(state.feed.map(f=>String(f.ts)));Object.keys(p.reacts).forEach(k=>{if(!keep.has(k))delete p.reacts[k]});
+  render();
+}
+/* ===== جلسة التركيز ===== */
+const FS={dur:25,lock:false,run:false,paused:false,everPaused:false,endAt:0,remainMs:25*60000,iv:null,leftAt:0,wl:null,startedLock:false};
+const DURS=[10,25,45,60,90];
+function fmt(sec){return String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')}
 function updateTimer(){
   const rem=Math.max(0,Math.ceil((FS.run&&!FS.paused?FS.endAt-Date.now():FS.remainMs)/1000));
-  document.getElementById('timerDisplay').textContent=String(Math.floor(rem/60)).padStart(2,'0')+':'+String(rem%60).padStart(2,'0');
+  document.getElementById('timerDisplay').textContent=fmt(rem);
+  const ft=document.getElementById('flTime');if(ft)ft.textContent=fmt(rem);
+  const fb=document.getElementById('flBar');if(fb)fb.style.width=Math.min(100,100-rem/(FS.dur*60)*100)+'%';
+  return rem;
 }
+function renderChips(){
+  document.getElementById('durChips').innerHTML=DURS.map(m=>`<button class="btn ${FS.dur===m?'':'ghost'}" style="padding:8px 14px" onclick="setDur(${m})">${m} د</button>`).join('');
+}
+function setDur(m,fromInput){
+  if(FS.run)return;
+  m=Math.round(Number(m));if(!(m>=10&&m<=180)){if(!fromInput)return;m=null}
+  if(m){FS.dur=m;FS.remainMs=m*60000;if(!fromInput)document.getElementById('durCustom').value='';updateTimer()}
+  renderChips();
+}
+function rewardFor(m,lock){
+  let xp=Math.round(m*0.4),coins=Math.max(1,Math.round(m*0.12)),wk=Math.max(2,Math.round(m*0.2));
+  if(lock){xp=Math.round(xp*1.25);coins=Math.max(1,Math.round(coins*1.25));wk=Math.round(wk*1.25)}
+  return {xp,coins,wk};
+}
+async function wakeOn(){try{if('wakeLock' in navigator)FS.wl=await navigator.wakeLock.request('screen')}catch(e){}}
+function wakeOff(){try{FS.wl&&FS.wl.release()}catch(e){}FS.wl=null}
+function showLock(on){const o=document.getElementById('focusLock');o.style.display=on?'flex':'none';
+  if(on){try{document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen().catch(()=>{})}catch(e){}}
+  else{try{document.fullscreenElement&&document.exitFullscreen()}catch(e){}}}
+function stopSession(){
+  clearInterval(FS.iv);FS.iv=null;FS.run=false;FS.paused=false;FS.everPaused=false;FS.startedLock=false;wakeOff();showLock(false);
+  FS.remainMs=FS.dur*60000;updateTimer();
+  document.getElementById('timerStart').textContent='ابدئي المؤقت';
+  document.getElementById('lockMode').disabled=false;document.getElementById('durCustom').disabled=false;
+}
+function failSession(reason){
+  stopSession();
+  const modal=document.getElementById('modal');document.getElementById('modalBackdrop').style.display='grid';
+  modal.innerHTML=`<h2>الجلسة انتهت 💔</h2><p class="muted" style="line-height:2">${escapeHtml(reason)}<br>ما انحسبت المكافأة، جربي مرة ثانية!</p><div class="modal-actions"><button class="btn" onclick="closeModal()">تمام</button></div>`;
+}
+function finishSession(){
+  const m=FS.dur,lock=FS.startedLock,uninterrupted=!FS.everPaused,r=rewardFor(m,lock);
+  stopSession();
+  const p=player();
+  if(!p.pid){toast('سجلي دخولك أول عشان تنحسب المكافأة');return}
+  p.xp+=r.xp;p.coins+=r.coins;p.weekly+=r.wk;
+  {const k=dayKey(),yk=dayKey(new Date(Date.now()-864e5));if(p.dayKey!==k){p.dayKey=k;p.dayMin=0}
+   const before=p.dayMin||0;p.dayMin=before+m;p.focusMin=(p.focusMin||0)+m;p.weekMin=(p.weekMin||0)+m;
+   p.focusSessions=p.focusSessions||[];p.focusSessions.push(Date.now());p.focusSessions=p.focusSessions.slice(-100);
+   if(p.lastDay!==k){p.streak=p.lastDay===yk?(p.streak||0)+1:1;p.lastDay=k}
+   if(before<30&&p.dayMin>=30){p.xp+=10;setTimeout(()=>toast('وصلتِ هدف اليوم! +10 XP 🔥'),3000)}}
+  const previousFocusAt=p.lastFocusAt;p.lastFocusAt=Date.now();if(previousFocusAt&&Date.now()-previousFocusAt>=3*864e5)unlockBadge(p,'comeback');checkSecretBadges(p,m,uninterrupted);
+  addFeed(`${p.name} أكملت جلسة تركيز ${m} دقيقة${lock?' 🔒':''} (+${r.xp} XP)`);
+  render();toast(`جلسة مكتملة! +${r.xp} XP و +${r.coins} عملات`);
+  try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}
+}
+function tick(){if(updateTimer()<=0)finishSession()}
 function startSession(){
+  if(!player().pid){toast('سجلي دخولك أول');return}
+  FS.lock=document.getElementById('lockMode').checked;FS.startedLock=FS.lock;
   FS.run=true;FS.paused=false;FS.endAt=Date.now()+FS.remainMs;
-  FS.iv=setInterval(()=>{if(updateTimer()<=0){clearInterval(FS.iv);player().xp+=20;render();toast('أكملتِ جلسة التركيز! +20 XP')}},250);
-  document.getElementById('timerStart').textContent='إيقاف مؤقت';
+  FS.iv=setInterval(tick,250);wakeOn();
+  document.getElementById('lockMode').disabled=true;document.getElementById('durCustom').disabled=true;
+  if(FS.lock){showLock(true);document.getElementById('timerStart').textContent='🔒 جلسة جارية'}
+  else document.getElementById('timerStart').textContent='إيقاف مؤقت';
+  updateTimer();
 }
-document.getElementById('timerStart').addEventListener('click',()=>{if(!FS.run)startSession();else{FS.paused=!FS.paused;if(FS.paused){clearInterval(FS.iv);document.getElementById('timerStart').textContent='استئناف'}else{FS.endAt=Date.now()+FS.remainMs;startSession()}}});
-document.getElementById('timerReset').addEventListener('click',()=>{clearInterval(FS.iv);FS.run=false;FS.remainMs=25*60000;updateTimer();document.getElementById('timerStart').textContent='ابدئي المؤقت'});
-
-function renderShop(){let p=player();document.getElementById('shopGrid').innerHTML=items.map(it=>`<div class="shop-item"><div class="shop-emoji">${it.emoji}</div><h3>${it.name}</h3><div class="muted small">${it.cost} عملة</div><button class="btn" onclick="buyItem('${it.id}')">شراء</button></div>`).join('')}
-function buyItem(id){let it=items.find(x=>x.id===id),p=player();if(p.coins<it.cost){toast('عملاتك غير كافية');return}p.coins-=it.cost;p.owned.push(id);render();toast('تم الشراء!')}
-function renderWorld(){let p=player();document.getElementById('ownedItems').innerHTML=p.owned.map(id=>`<span class="tag">${items.find(x=>x.id===id).emoji} عنصر</span>`).join('')||'<span class="muted small">لا توجد عناصر</span>';document.getElementById('roomTitle').textContent='غرفة '+p.name}
-function renderProfile(){let p=player(),lv=level(p.xp);document.getElementById('profileAvatar').innerHTML=p.avatar||p.name[0];document.getElementById('profileName').textContent=p.name;document.getElementById('profileRank').textContent=lv.name;document.getElementById('profileBar').style.width='50%';document.getElementById('profileXPText').textContent=p.xp+' XP'}
-
-document.querySelectorAll('.nav button[data-page]').forEach(b=>b.addEventListener('click',()=>nav(b.dataset.page)));
-document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>nav(b.dataset.goto)));
-document.getElementById('switchBtn').addEventListener('click',switchPlayer);
-document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('sidebar').classList.toggle('open'));
-document.getElementById('addTaskBtn').addEventListener('click',openModal);
-document.getElementById('addTaskBtn2').addEventListener('click',openModal);
-
+document.getElementById('timerStart').addEventListener('click',()=>{
+  if(FS.run&&FS.startedLock)return;
+  if(!FS.run){startSession();return}
+  if(!FS.paused){FS.remainMs=FS.endAt-Date.now();FS.paused=true;FS.everPaused=true;clearInterval(FS.iv);FS.iv=null;wakeOff();document.getElementById('timerStart').textContent='استئناف';updateTimer()}
+  else{FS.paused=false;FS.endAt=Date.now()+FS.remainMs;FS.iv=setInterval(tick,250);wakeOn();document.getElementById('timerStart').textContent='إيقاف مؤقت'}
+});
+document.getElementById('timerReset').addEventListener('click',()=>{if(FS.run&&FS.startedLock){if(!confirm('تبين تنهين الجلسة بدون مكافأة؟'))return}stopSession()});
+document.getElementById('flGiveUp').addEventListener('click',()=>{if(confirm('تبين تنهين الجلسة بدون مكافأة؟'))failSession('أنهيتِ الجلسة بنفسك.')});
+document.getElementById('durCustom').addEventListener('input',e=>{const v=e.target.value;if(v==='')return;setDur(v,true)});
+document.addEventListener('visibilitychange',()=>{
+  if(!(FS.run&&FS.startedLock&&!FS.paused))return;
+  if(document.hidden){FS.leftAt=Date.now()}
+  else{
+    if(FS.leftAt&&Date.now()-FS.leftAt>10000){failSession('خرجتِ من الصفحة أكثر من 10 ثواني.');return}
+    FS.leftAt=0;wakeOn();if(updateTimer()<=0)finishSession()
+  }
+});
+window.addEventListener('beforeunload',e=>{if(FS.run&&FS.startedLock){e.preventDefault();e.returnValue=''}});
+renderChips();updateTimer();
+document.getElementById('avatarBtn').addEventListener('click',openAvatar);
+['topAvatar','profileAvatar'].forEach(id=>{const el=document.getElementById(id);if(el){el.style.cursor='pointer';el.title='تغيير الأفتار';el.addEventListener('click',openAvatar)}});
 normalize(state);fixActive();render();
+if(window.cloud)initCloud();else window.onCloudReady=initCloud;
+setTimeout(()=>{if(!cloudOn)ensureLocalPlayer()},5000);
 </script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
 import { getFirestore, doc, onSnapshot, runTransaction } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-firestore.js";
-const firebaseConfig = { apiKey: "AIzaSyDE3Hk0zbdccWF2_X_8-pYrybHgwZHY4F0", authDomain: "noi-academy-53eb5.firebaseapp.com", projectId: "noi-academy-53eb5", storageBucket: "noi-academy-53eb5.firebasestorage.app", messagingSenderId: "480847528221", appId: "1:480847528221:web:5a2c2b98664cc87e6e61f4" };
+const firebaseConfig = {
+  apiKey: "AIzaSyDE3Hk0zbdccWF2_X_8-pYrybHgwZHY4F0",
+  authDomain: "noi-academy-53eb5.firebaseapp.com",
+  projectId: "noi-academy-53eb5",
+  storageBucket: "noi-academy-53eb5.firebasestorage.app",
+  messagingSenderId: "480847528221",
+  appId: "1:480847528221:web:5a2c2b98664cc87e6e61f4"
+};
 try{
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
